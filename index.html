@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orderly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="js/theme-init.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span>
+        Orderly
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home"></a></li>
+        <li><a href="about.html" data-i18n="nav.aboutProject"></a></li>
+        <li><a href="about-us.html" data-i18n="nav.aboutUs"></a></li>
+        <li><a href="pricing.html" data-i18n="nav.pricing"></a></li>
+        <li><a href="contact.html" data-i18n="nav.contact"></a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" type="button" data-i18n-aria="common.langSwitcher">
+            <span class="lang-btn-label">🇸🇦 العربية</span>
+            <span>▾</span>
+          </button>
+          <div class="lang-dropdown"></div>
+        </div>
+        <button class="theme-toggle" type="button" data-i18n-aria="common.themeToggle" aria-pressed="false">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+        <a href="#download" class="btn btn-primary" data-i18n="nav.getStarted"></a>
+        <button class="menu-toggle" type="button" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          <span data-i18n="hero.badge"></span>
+        </div>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title"></span><br>
+          <span class="highlight" data-i18n="hero.titleHighlight"></span>
+        </h1>
+        <p class="hero-desc" data-i18n="hero.desc"></p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary"></a>
+          <a href="#features" class="btn btn-outline btn-lg" data-i18n="hero.ctaSecondary"></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong data-i18n="hero.stat1Value"></strong>
+            <span data-i18n="hero.stat1Label"></span>
+          </div>
+          <div class="stat-item">
+            <strong data-i18n="hero.stat2Value"></strong>
+            <span data-i18n="hero.stat2Label"></span>
+          </div>
+          <div class="stat-item">
+            <strong data-i18n="hero.stat3Value"></strong>
+            <span data-i18n="hero.stat3Label"></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card fc-1">
+          <span class="fc-icon" style="background:color-mix(in srgb,var(--color-success) 20%,transparent)">📦</span>
+          <span data-i18n="hero.float1"></span>
+        </div>
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="mock-header">
+              <span data-i18n="hero.mockTitle"></span>
+              <span>⚙</span>
+            </div>
+            <div class="mock-card">
+              <div class="mock-card-row">
+                <span data-i18n="hero.mockOrder1"></span>
+                <span class="status status-new" data-i18n="hero.mockStatusNew"></span>
+              </div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-card-row">
+                <span data-i18n="hero.mockOrder2"></span>
+                <span class="status status-prep" data-i18n="hero.mockStatusPrep"></span>
+              </div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-card-row">
+                <span data-i18n="hero.mockOrder3"></span>
+                <span class="status status-done" data-i18n="hero.mockStatusDone"></span>
+              </div>
+            </div>
+            <div class="mock-stats">
+              <div class="mock-stat">
+                <strong>$4.2K</strong>
+                <span data-i18n="hero.mockRevenue"></span>
+              </div>
+              <div class="mock-stat">
+                <strong>$1.8K</strong>
+                <span data-i18n="hero.mockProfit"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card fc-2">
+          <span class="fc-icon" style="background:color-mix(in srgb,var(--color-primary) 20%,transparent)">✓</span>
+          <span data-i18n="hero.float2"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="section problem">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="problem.label"></span>
+        <h2 class="section-title" data-i18n="problem.title"></h2>
+        <p class="section-desc" data-i18n="problem.desc"></p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">📱</div>
+          <h3 data-i18n="problem.item1Title"></h3>
+          <p data-i18n="problem.item1Desc"></p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📦</div>
+          <h3 data-i18n="problem.item2Title"></h3>
+          <p data-i18n="problem.item2Desc"></p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📊</div>
+          <h3 data-i18n="problem.item3Title"></h3>
+          <p data-i18n="problem.item3Desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="features.label"></span>
+        <h2 class="section-title" data-i18n="features.title"></h2>
+        <p class="section-desc" data-i18n="features.desc"></p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🛒</div>
+          <div>
+            <h3 data-i18n="features.orderTitle"></h3>
+            <p data-i18n="features.orderDesc"></p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <div>
+            <h3 data-i18n="features.inventoryTitle"></h3>
+            <p data-i18n="features.inventoryDesc"></p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <div>
+            <h3 data-i18n="features.accountingTitle"></h3>
+            <p data-i18n="features.accountingDesc"></p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <div>
+            <h3 data-i18n="features.reportsTitle"></h3>
+            <p data-i18n="features.reportsDesc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roles -->
+  <section class="section roles">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="roles.label"></span>
+        <h2 class="section-title" data-i18n="roles.title"></h2>
+        <p class="section-desc" data-i18n="roles.desc"></p>
+      </div>
+      <div class="roles-grid">
+        <div class="role-card">
+          <div class="role-avatar">👔</div>
+          <h3 data-i18n="roles.managerTitle"></h3>
+          <span class="role-tag" data-i18n="roles.managerTag"></span>
+          <p data-i18n="roles.managerDesc"></p>
+        </div>
+        <div class="role-card">
+          <div class="role-avatar">⚙️</div>
+          <h3 data-i18n="roles.adminTitle"></h3>
+          <span class="role-tag" data-i18n="roles.adminTag"></span>
+          <p data-i18n="roles.adminDesc"></p>
+        </div>
+        <div class="role-card">
+          <div class="role-avatar">📣</div>
+          <h3 data-i18n="roles.marketerTitle"></h3>
+          <span class="role-tag" data-i18n="roles.marketerTag"></span>
+          <p data-i18n="roles.marketerDesc"></p>
+        </div>
+        <div class="role-card">
+          <div class="role-avatar">🏭</div>
+          <h3 data-i18n="roles.warehouseTitle"></h3>
+          <span class="role-tag" data-i18n="roles.warehouseTag"></span>
+          <p data-i18n="roles.warehouseDesc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="howItWorks.label"></span>
+        <h2 class="section-title" data-i18n="howItWorks.title"></h2>
+        <p class="section-desc" data-i18n="howItWorks.desc"></p>
+      </div>
+      <div class="steps">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h3 data-i18n="howItWorks.step1Title"></h3>
+          <p data-i18n="howItWorks.step1Desc"></p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h3 data-i18n="howItWorks.step2Title"></h3>
+          <p data-i18n="howItWorks.step2Desc"></p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h3 data-i18n="howItWorks.step3Title"></h3>
+          <p data-i18n="howItWorks.step3Desc"></p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">4</div>
+          <h3 data-i18n="howItWorks.step4Title"></h3>
+          <p data-i18n="howItWorks.step4Desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Apps -->
+  <section class="section downloads" id="download">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="download.label"></span>
+        <h2 class="section-title" data-i18n="download.title"></h2>
+        <p class="section-desc" data-i18n="download.desc"></p>
+      </div>
+      <div class="download-grid">
+        <div class="download-card">
+          <div class="download-card-icon">👔</div>
+          <h3 data-i18n="download.managerTitle"></h3>
+          <p data-i18n="download.managerDesc"></p>
+          <button type="button" class="btn btn-primary btn-block download-btn" data-role="manager" data-i18n="download.downloadBtn"></button>
+        </div>
+        <div class="download-card">
+          <div class="download-card-icon">⚙️</div>
+          <h3 data-i18n="download.adminTitle"></h3>
+          <p data-i18n="download.adminDesc"></p>
+          <button type="button" class="btn btn-primary btn-block download-btn" data-role="admin" data-i18n="download.downloadBtn"></button>
+        </div>
+        <div class="download-card">
+          <div class="download-card-icon">📣</div>
+          <h3 data-i18n="download.marketerTitle"></h3>
+          <p data-i18n="download.marketerDesc"></p>
+          <button type="button" class="btn btn-primary btn-block download-btn" data-role="marketer" data-i18n="download.downloadBtn"></button>
+        </div>
+        <div class="download-card">
+          <div class="download-card-icon">🏭</div>
+          <h3 data-i18n="download.warehouseTitle"></h3>
+          <p data-i18n="download.warehouseDesc"></p>
+          <button type="button" class="btn btn-primary btn-block download-btn" data-role="warehouse" data-i18n="download.downloadBtn"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="testimonials.label"></span>
+        <h2 class="section-title" data-i18n="testimonials.title"></h2>
+        <p class="section-desc" data-i18n="testimonials.desc"></p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text" data-i18n="testimonials.t1Text"></p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SA</div>
+            <div class="author-info">
+              <strong data-i18n="testimonials.t1Name"></strong>
+              <span data-i18n="testimonials.t1Role"></span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text" data-i18n="testimonials.t2Text"></p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MK</div>
+            <div class="author-info">
+              <strong data-i18n="testimonials.t2Name"></strong>
+              <span data-i18n="testimonials.t2Role"></span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text" data-i18n="testimonials.t3Text"></p>
+          <div class="testimonial-author">
+            <div class="author-avatar">NH</div>
+            <div class="author-info">
+              <strong data-i18n="testimonials.t3Name"></strong>
+              <span data-i18n="testimonials.t3Role"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 data-i18n="cta.title"></h2>
+        <p data-i18n="cta.desc"></p>
+        <a href="#download" class="btn btn-primary btn-lg" data-i18n="cta.button"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span>
+            Orderly
+          </a>
+          <p data-i18n="footer.desc"></p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">Li</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.product"></h4>
+          <ul>
+            <li><a href="#features" data-i18n="footer.features"></a></li>
+            <li><a href="#download" data-i18n="download.label"></a></li>
+            <li><a href="pricing.html" data-i18n="footer.pricing"></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.company"></h4>
+          <ul>
+            <li><a href="about.html" data-i18n="footer.aboutProject"></a></li>
+            <li><a href="about-us.html" data-i18n="footer.aboutUs"></a></li>
+            <li><a href="contact.html" data-i18n="footer.contact"></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.support"></h4>
+          <ul>
+            <li><a href="contact.html" data-i18n="footer.help"></a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy"></a></li>
+            <li><a href="terms.html" data-i18n="footer.terms"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Orderly. <span data-i18n="footer.rights"></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/download.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/**
+ * Orderly — Simple i18n System
+ */
+const OrderlyI18n = (() => {
+  const STORAGE_KEY = 'orderly-lang';
+  const DEFAULT_LANG = 'ar';
+
+  const LANGUAGES = [
+    { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: 'zh', name: '中文', flag: '🇨🇳' },
+    { code: 'hi', name: 'हिन्दी', flag: '🇮🇳' },
+    { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹' }
+  ];
+
+  let currentLang = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
+  let translations = {};
+
+  function getBasePath() {
+    return '';
+  }
+
+  function t(key) {
+    const keys = key.split('.');
+    let value = translations;
+    for (const k of keys) {
+      if (value && typeof value === 'object' && k in value) {
+        value = value[k];
+      } else {
+        return key;
+      }
+    }
+    return value ?? key;
+  }
+
+  function applyTranslations() {
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      const text = t(key);
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        if (el.hasAttribute('data-i18n-placeholder')) return;
+      }
+      el.textContent = text;
+    });
+
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      el.innerHTML = t(el.getAttribute('data-i18n-html'));
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+      el.placeholder = t(el.getAttribute('data-i18n-placeholder'));
+    });
+
+    document.querySelectorAll('[data-i18n-title]').forEach((el) => {
+      el.title = t(el.getAttribute('data-i18n-title'));
+    });
+
+    document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
+      el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria')));
+    });
+
+    const pageKey = document.body.getAttribute('data-page');
+    if (pageKey) {
+      document.title = t(`meta.title_${pageKey}`);
+    }
+
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+  }
+
+  function updateLangSwitcher() {
+    const current = LANGUAGES.find((l) => l.code === currentLang);
+    const label = document.querySelector('.lang-btn-label');
+    if (label && current) {
+      label.textContent = `${current.flag} ${current.name}`;
+    }
+
+    document.querySelectorAll('.lang-option').forEach((btn) => {
+      btn.classList.toggle('active', btn.dataset.lang === currentLang);
+    });
+  }
+
+  async function loadLanguage(lang) {
+    const base = getBasePath();
+    try {
+      const res = await fetch(`${base}locales/${lang}.json`);
+      if (!res.ok) throw new Error('Failed to load locale');
+      translations = await res.json();
+      currentLang = lang;
+      localStorage.setItem(STORAGE_KEY, lang);
+      applyTranslations();
+      updateLangSwitcher();
+    } catch (err) {
+      console.error('i18n load error:', err);
+      if (lang !== DEFAULT_LANG) await loadLanguage(DEFAULT_LANG);
+    }
+  }
+
+  function buildLangDropdown() {
+    const switcher = document.querySelector('.lang-switcher');
+    if (!switcher) return;
+
+    const dropdown = switcher.querySelector('.lang-dropdown');
+    if (!dropdown) return;
+
+    dropdown.innerHTML = LANGUAGES.map(
+      (l) =>
+        `<button class="lang-option" data-lang="${l.code}" type="button">${l.flag} ${l.name}</button>`
+    ).join('');
+
+    dropdown.querySelectorAll('.lang-option').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        loadLanguage(btn.dataset.lang);
+        switcher.classList.remove('open');
+      });
+    });
+  }
+
+  function initLangSwitcher() {
+    const switcher = document.querySelector('.lang-switcher');
+    const btn = document.querySelector('.lang-btn');
+    if (!switcher || !btn) return;
+
+    buildLangDropdown();
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      switcher.classList.toggle('open');
+    });
+
+    document.addEventListener('click', () => {
+      switcher.classList.remove('open');
+    });
+  }
+
+  async function init() {
+    initLangSwitcher();
+    await loadLanguage(currentLang);
+  }
+
+  return { init, t, loadLanguage, getCurrentLang: () => currentLang, LANGUAGES };
+})();
+
+window.OrderlyI18n = OrderlyI18n;
+
+document.addEventListener('DOMContentLoaded', () => OrderlyI18n.init());
