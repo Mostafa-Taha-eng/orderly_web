@@ -4,6 +4,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initScrollEffects();
+  initFaqAccordion();
+  initScreenshotLightbox();
   initContactForms();
   initContactTabs();
   initBillingToggle();
@@ -30,35 +32,109 @@ function initMobileNav() {
 
 function initScrollEffects() {
   const navbar = document.querySelector('.navbar');
-  if (!navbar) return;
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
 
-  window.addEventListener('scroll', () => {
-    navbar.style.boxShadow =
-      window.scrollY > 10 ? 'var(--shadow-sm)' : 'none';
-  });
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const delay = el.dataset.revealDelay || '0';
+        el.style.transitionDelay = `${delay}ms`;
+        el.classList.add('is-visible');
+        observer.unobserve(el);
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.12, rootMargin: '0px 0px -48px 0px' }
   );
 
-  document
-    .querySelectorAll(
-      '.feature-card, .role-card, .problem-card, .testimonial-card, .step-item, .pricing-card, .value-card, .download-card, .team-card, .social-contact-card'
-    )
-    .forEach((el) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(24px)';
-      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(el);
+  const selectors = [
+    '.feature-card',
+    '.role-card',
+    '.problem-card',
+    '.testimonial-card',
+    '.step-item',
+    '.pricing-card',
+    '.value-card',
+    '.download-card',
+    '.team-card',
+    '.social-contact-card',
+    '.faq-item',
+    '.shot-card',
+    '.section-header'
+  ];
+
+  document.querySelectorAll(selectors.join(', ')).forEach((el) => {
+    el.classList.add('reveal');
+    if (!el.dataset.revealDelay) {
+      const siblingIndex = [...(el.parentElement?.children || [])].indexOf(el);
+      el.dataset.revealDelay = String(Math.min(siblingIndex, 6) * 70);
+    }
+    observer.observe(el);
+  });
+}
+
+function initFaqAccordion() {
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    const btn = item.querySelector('.faq-question');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach((openItem) => {
+        if (openItem !== item) {
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
     });
+  });
+}
+
+function initScreenshotLightbox() {
+  const gallery = document.querySelector('.screenshots-gallery');
+  if (!gallery) return;
+
+  let overlay = document.querySelector('.shot-lightbox');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'shot-lightbox';
+    overlay.innerHTML = '<button type="button" class="shot-lightbox-close" aria-label="Close">×</button><img alt="">';
+    document.body.appendChild(overlay);
+  }
+
+  const img = overlay.querySelector('img');
+  const closeBtn = overlay.querySelector('.shot-lightbox-close');
+
+  const close = () => overlay.classList.remove('open');
+
+  gallery.querySelectorAll('.shot-card img').forEach((thumb) => {
+    thumb.parentElement?.addEventListener('click', () => {
+      img.src = thumb.src;
+      img.alt = thumb.alt || '';
+      overlay.classList.add('open');
+    });
+  });
+
+  closeBtn?.addEventListener('click', close);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) close();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
 }
 
 function setActiveNavLink() {

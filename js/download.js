@@ -1,6 +1,13 @@
 /**
- * Orderly — Mock / Real APK Downloads
+ * Orderly — APK Downloads
  */
+const APP_DOWNLOADS = {
+  manager: { file: 'Manager.apk', name: 'Orderly-Manager.apk' },
+  admin: { file: 'Admin.apk', name: 'Orderly-Admin.apk' },
+  marketer: { file: 'Marketer.apk', name: 'Orderly-Marketer.apk' },
+  warehouse: { file: 'communications stock.apk', name: 'Orderly-Stock-Comms.apk' }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   initDownloadButtons();
   initScrollToDownload();
@@ -27,43 +34,31 @@ function initScrollToDownload() {
   }
 }
 
-function getBasePath() {
-  return '';
-}
-
 async function downloadApp(role, btn) {
-  const base = getBasePath();
-  const filename = `orderly-${role}.apk`;
-  const apkPath = `${base}downloads/${filename}`;
+  const app = APP_DOWNLOADS[role];
+  if (!app) return;
+
+  const href = `assets/apps/${encodeURIComponent(app.file)}`;
 
   btn.disabled = true;
   btn.classList.add('downloading');
 
+  if (typeof OrderlyI18n !== 'undefined') {
+    btn.textContent = OrderlyI18n.t('download.downloading');
+  }
+
   try {
-    const head = await fetch(apkPath, { method: 'HEAD' });
-    if (head.ok) {
-      triggerDownload(apkPath, filename);
+    const res = await fetch(href, { method: 'HEAD' });
+    if (res.ok) {
+      triggerDownload(href, app.name);
       showDownloadFeedback(btn, 'done');
       return;
     }
   } catch (_) {
-    /* real APK not available yet */
+    /* fall through to direct link attempt */
   }
 
-  const placeholder = [
-    'Orderly Mobile Application',
-    `Role: ${role}`,
-    '',
-    'This is a placeholder file.',
-    'Replace with the real APK in /downloads/ folder.',
-    '',
-    '© 2026 Orderly'
-  ].join('\n');
-
-  const blob = new Blob([placeholder], { type: 'application/vnd.android.package-archive' });
-  const url = URL.createObjectURL(blob);
-  triggerDownload(url, filename);
-  URL.revokeObjectURL(url);
+  triggerDownload(href, app.name);
   showDownloadFeedback(btn, 'done');
 }
 
