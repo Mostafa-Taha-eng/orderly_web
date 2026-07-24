@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="assets/logos/manager_logo.png">
   <link rel="apple-touch-icon" href="assets/logos/manager_logo.png">
   <!-- orderly-seo-head -->
-  <meta name="description" content="خطط أسعار Orderly الشهرية والسنوية حسب حجم فريقك — ابدأ بتنظيم تجارتك اليوم.">
+  <meta name="description" content="خطط أسعار Orderly: اشتراك شهري بـ 99 جنيه أو سنوي بـ 999 جنيه.">
   <meta name="keywords" content="Orderly, أسعار, اشتراك, خطط">
   <meta name="author" content="Orderly">
   <meta name="robots" content="index,follow">
@@ -22,13 +22,13 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Orderly">
   <meta property="og:title" content="الأسعار — Orderly">
-  <meta property="og:description" content="خطط أسعار Orderly الشهرية والسنوية حسب حجم فريقك — ابدأ بتنظيم تجارتك اليوم.">
+  <meta property="og:description" content="خطط أسعار Orderly: اشتراك شهري بـ 99 جنيه أو سنوي بـ 999 جنيه.">
   <meta property="og:image" content="assets/logos/manager_logo.png">
   <meta property="og:url" content="./pricing.html">
   <meta property="og:locale" content="ar_EG">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="الأسعار — Orderly">
-  <meta name="twitter:description" content="خطط أسعار Orderly الشهرية والسنوية حسب حجم فريقك — ابدأ بتنظيم تجارتك اليوم.">
+  <meta name="twitter:description" content="خطط أسعار Orderly: اشتراك شهري بـ 99 جنيه أو سنوي بـ 999 جنيه.">
   <meta name="twitter:image" content="assets/logos/manager_logo.png">
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -84,71 +84,43 @@
 
   <section class="section">
     <div class="container">
-      <div class="pricing-toggle-wrap">
-        <span class="active" data-billing="monthly" data-i18n="pricing.monthly"></span>
-        <button class="billing-toggle" type="button" aria-label="Toggle billing"></button>
-        <span data-billing="yearly" data-i18n="pricing.yearly"></span>
-      </div>
-
-      <div class="pricing-grid">
-        <!-- Starter -->
+      <div class="pricing-grid pricing-grid-two">
         <div class="pricing-card">
-          <h3 data-i18n="pricing.starterName"></h3>
-          <p class="plan-desc" data-i18n="pricing.starterDesc"></p>
+          <h3 data-i18n="pricing.monthlyName"></h3>
+          <p class="plan-desc" data-i18n="pricing.monthlyDesc"></p>
           <div class="pricing-price">
-            <span class="currency">$</span>
-            <span class="amount" data-monthly="29" data-yearly="24">29</span>
-            <span class="period" data-i18n="pricing.period"></span>
+            <span class="amount">99</span>
+            <span class="currency" data-i18n="pricing.currency"></span>
+            <span class="period" data-i18n="pricing.periodMonthly"></span>
           </div>
-          <p class="pricing-users" data-i18n="pricing.starterUsers"></p>
           <ul class="pricing-features">
-            <li data-i18n="pricing.starterF1"></li>
-            <li data-i18n="pricing.starterF2"></li>
-            <li data-i18n="pricing.starterF3"></li>
-            <li data-i18n="pricing.starterF4"></li>
+            <li data-i18n="pricing.f1"></li>
+            <li data-i18n="pricing.f2"></li>
+            <li data-i18n="pricing.f3"></li>
+            <li data-i18n="pricing.f4"></li>
+            <li data-i18n="pricing.f5"></li>
           </ul>
-          <a href="contact.html" class="btn btn-outline btn-block" data-i18n="pricing.choosePlan"></a>
+          <a href="index.html#download" class="btn btn-outline btn-block" data-i18n="pricing.choosePlan"></a>
         </div>
 
-        <!-- Professional -->
         <div class="pricing-card featured">
-          <span class="pricing-badge" data-i18n="pricing.proBadge"></span>
-          <h3 data-i18n="pricing.proName"></h3>
-          <p class="plan-desc" data-i18n="pricing.proDesc"></p>
+          <span class="pricing-badge" data-i18n="pricing.yearlyBadge"></span>
+          <h3 data-i18n="pricing.yearlyName"></h3>
+          <p class="plan-desc" data-i18n="pricing.yearlyDesc"></p>
           <div class="pricing-price">
-            <span class="currency">$</span>
-            <span class="amount" data-monthly="79" data-yearly="65">79</span>
-            <span class="period" data-i18n="pricing.period"></span>
+            <span class="amount">999</span>
+            <span class="currency" data-i18n="pricing.currency"></span>
+            <span class="period" data-i18n="pricing.periodYearly"></span>
           </div>
-          <p class="pricing-users" data-i18n="pricing.proUsers"></p>
           <ul class="pricing-features">
-            <li data-i18n="pricing.proF1"></li>
-            <li data-i18n="pricing.proF2"></li>
-            <li data-i18n="pricing.proF3"></li>
-            <li data-i18n="pricing.proF4"></li>
-            <li data-i18n="pricing.proF5"></li>
+            <li data-i18n="pricing.f1"></li>
+            <li data-i18n="pricing.f2"></li>
+            <li data-i18n="pricing.f3"></li>
+            <li data-i18n="pricing.f4"></li>
+            <li data-i18n="pricing.f5"></li>
+            <li data-i18n="pricing.yearlyExtra"></li>
           </ul>
-          <a href="contact.html" class="btn btn-primary btn-block" data-i18n="pricing.choosePlan"></a>
-        </div>
-
-        <!-- Enterprise -->
-        <div class="pricing-card">
-          <h3 data-i18n="pricing.enterpriseName"></h3>
-          <p class="plan-desc" data-i18n="pricing.enterpriseDesc"></p>
-          <div class="pricing-price">
-            <span class="currency">$</span>
-            <span class="amount" data-monthly="199" data-yearly="165">199</span>
-            <span class="period" data-i18n="pricing.period"></span>
-          </div>
-          <p class="pricing-users" data-i18n="pricing.enterpriseUsers"></p>
-          <ul class="pricing-features">
-            <li data-i18n="pricing.enterpriseF1"></li>
-            <li data-i18n="pricing.enterpriseF2"></li>
-            <li data-i18n="pricing.enterpriseF3"></li>
-            <li data-i18n="pricing.enterpriseF4"></li>
-            <li data-i18n="pricing.enterpriseF5"></li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline btn-block" data-i18n="pricing.contactSales"></a>
+          <a href="index.html#download" class="btn btn-primary btn-block" data-i18n="pricing.choosePlan"></a>
         </div>
       </div>
 

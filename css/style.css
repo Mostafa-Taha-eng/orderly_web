@@ -1337,6 +1337,12 @@ html[dir="rtl"] .billing-toggle.yearly::before {
   align-items: start;
 }
 
+.pricing-grid-two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 820px;
+  margin-inline: auto;
+}
+
 .pricing-card {
   background: var(--color-surface);
   border-radius: var(--radius-xl);
@@ -1392,9 +1398,10 @@ html[dir="rtl"] .pricing-badge {
 }
 
 .pricing-price .currency {
-  font-size: 1.25rem;
-  font-weight: 600;
-  vertical-align: super;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-inline-start: 0.25rem;
 }
 
 .pricing-price .period {
@@ -1606,7 +1613,8 @@ html[dir="rtl"] .pricing-badge {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .about-story { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
-  .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+  .pricing-grid,
+  .pricing-grid-two { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
   .pricing-card.featured { transform: none; }
   .contact-grid { grid-template-columns: 1fr; }
 }
