@@ -63,7 +63,6 @@ function initScrollEffects() {
 
   const selectors = [
     '.feature-card',
-    '.role-card',
     '.problem-card',
     '.testimonial-card',
     '.step-item',
