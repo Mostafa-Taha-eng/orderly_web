@@ -125,20 +125,44 @@ function initScreenshotCarousel() {
     overlay.className = 'shot-lightbox';
     overlay.innerHTML = `
       <button type="button" class="shot-lightbox-close" aria-label="Close">×</button>
-      <div class="shot-lightbox-frame">
-        <img alt="">
+      <button type="button" class="shot-lightbox-arrow shot-lightbox-prev" aria-label="Previous">‹</button>
+      <div class="shot-lightbox-stage">
+        <div class="shot-lightbox-frame">
+          <img alt="">
+        </div>
+        <span class="shot-lightbox-counter"></span>
       </div>
+      <button type="button" class="shot-lightbox-arrow shot-lightbox-next" aria-label="Next">›</button>
     `;
     document.body.appendChild(overlay);
   }
 
   const lightboxImg = overlay.querySelector('img');
   const lightboxClose = overlay.querySelector('.shot-lightbox-close');
+  const lightboxPrev = overlay.querySelector('.shot-lightbox-prev');
+  const lightboxNext = overlay.querySelector('.shot-lightbox-next');
+  const lightboxCounter = overlay.querySelector('.shot-lightbox-counter');
 
-  function openLightbox(src, alt) {
-    if (!lightboxImg) return;
-    lightboxImg.src = src;
-    lightboxImg.alt = alt || '';
+  let lightboxIndex = 0;
+
+  function renderLightbox() {
+    const slide = slides[lightboxIndex];
+    const img = slide?.querySelector('img');
+    if (!img || !lightboxImg) return;
+    lightboxImg.style.opacity = '0';
+    window.requestAnimationFrame(() => {
+      lightboxImg.src = img.currentSrc || img.src;
+      lightboxImg.alt = img.alt || '';
+      lightboxImg.style.opacity = '1';
+    });
+    if (lightboxCounter) {
+      lightboxCounter.textContent = `${lightboxIndex + 1} / ${slides.length}`;
+    }
+  }
+
+  function openLightbox(slideIndex) {
+    lightboxIndex = Math.max(0, Math.min(slideIndex, slides.length - 1));
+    renderLightbox();
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -148,12 +172,22 @@ function initScreenshotCarousel() {
     document.body.style.overflow = '';
   }
 
+  function lightboxStep(dir) {
+    lightboxIndex = (lightboxIndex + dir + slides.length) % slides.length;
+    renderLightbox();
+  }
+
   lightboxClose?.addEventListener('click', closeLightbox);
+  lightboxPrev?.addEventListener('click', () => lightboxStep(-1));
+  lightboxNext?.addEventListener('click', () => lightboxStep(1));
   overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) closeLightbox();
+    if (e.target === overlay || e.target.classList.contains('shot-lightbox-stage')) closeLightbox();
   });
   document.addEventListener('keydown', (e) => {
+    if (!overlay.classList.contains('open')) return;
     if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') lightboxStep(-1);
+    if (e.key === 'ArrowRight') lightboxStep(1);
   });
 
   function getMaxIndex() {
@@ -235,8 +269,8 @@ function initScreenshotCarousel() {
     update();
 
     if (!moved && phone) {
-      const img = phone.querySelector('img');
-      if (img) openLightbox(img.currentSrc || img.src, img.alt);
+      const slideIndex = slides.indexOf(phone.closest('.shot-slide'));
+      if (slideIndex >= 0) openLightbox(slideIndex);
     }
   });
 
@@ -247,7 +281,7 @@ function initScreenshotCarousel() {
     update();
   });
 
-  slides.forEach((slide) => {
+  slides.forEach((slide, i) => {
     const phone = slide.querySelector('.shot-phone');
     if (!phone) return;
     phone.setAttribute('role', 'button');
@@ -255,8 +289,7 @@ function initScreenshotCarousel() {
     phone.addEventListener('keydown', (e) => {
       if (e.key !== 'Enter' && e.key !== ' ') return;
       e.preventDefault();
-      const img = phone.querySelector('img');
-      if (img) openLightbox(img.currentSrc || img.src, img.alt);
+      openLightbox(i);
     });
   });
 
