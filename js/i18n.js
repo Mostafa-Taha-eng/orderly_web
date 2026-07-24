@@ -4,7 +4,7 @@
 const OrderlyI18n = (() => {
   const STORAGE_KEY = 'orderly-lang';
   const DEFAULT_LANG = 'ar';
-  const LOCALE_VERSION = '7';
+  const LOCALE_VERSION = '8';
 
   const LANGUAGES = [
     { code: 'ar', name: 'العربية', flag: '🇸🇦' },
