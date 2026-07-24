@@ -195,11 +195,15 @@ function initScreenshotCarousel() {
 
   let startX = 0;
   let dragging = false;
+  let moved = false;
+  let pressedPhone = null;
 
   track.addEventListener('pointerdown', (e) => {
     if (e.button !== 0) return;
     dragging = true;
+    moved = false;
     startX = e.clientX;
+    pressedPhone = e.target.closest('.shot-phone');
     track.setPointerCapture(e.pointerId);
     track.style.transition = 'none';
   });
@@ -207,6 +211,8 @@ function initScreenshotCarousel() {
   track.addEventListener('pointermove', (e) => {
     if (!dragging) return;
     const delta = e.clientX - startX;
+    if (Math.abs(delta) > 8) moved = true;
+
     const minX = -getMaxIndex() * slideStep;
     const maxX = 0;
     let offset = -index * slideStep + delta;
@@ -218,34 +224,39 @@ function initScreenshotCarousel() {
     if (!dragging) return;
     dragging = false;
     const delta = e.clientX - startX;
+    const phone = pressedPhone;
+    pressedPhone = null;
 
-    if (Math.abs(delta) > 40) {
+    if (moved && Math.abs(delta) > 40) {
       step(delta > 0 ? -1 : 1);
       return;
     }
 
     update();
 
-    const phone = e.target.closest('.shot-phone');
-    if (!phone) return;
-    const img = phone.querySelector('img');
-    if (img) openLightbox(img.src, img.alt);
+    if (!moved && phone) {
+      const img = phone.querySelector('img');
+      if (img) openLightbox(img.currentSrc || img.src, img.alt);
+    }
   });
 
   track.addEventListener('pointercancel', () => {
     dragging = false;
+    moved = false;
+    pressedPhone = null;
     update();
   });
 
   slides.forEach((slide) => {
     const phone = slide.querySelector('.shot-phone');
-    phone?.setAttribute('role', 'button');
-    phone?.setAttribute('tabindex', '0');
-    phone?.addEventListener('keydown', (e) => {
+    if (!phone) return;
+    phone.setAttribute('role', 'button');
+    phone.setAttribute('tabindex', '0');
+    phone.addEventListener('keydown', (e) => {
       if (e.key !== 'Enter' && e.key !== ' ') return;
       e.preventDefault();
       const img = phone.querySelector('img');
-      if (img) openLightbox(img.src, img.alt);
+      if (img) openLightbox(img.currentSrc || img.src, img.alt);
     });
   });
 
