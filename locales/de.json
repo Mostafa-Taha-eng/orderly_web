@@ -2,7 +2,6 @@
   "meta": {
     "title_home": "Orderly — Auftrags- und Lagerverwaltung für Online-Händler",
     "title_about": "Über die App — Orderly",
-    "title_aboutUs": "Über uns — Orderly",
     "title_pricing": "Preise — Orderly",
     "title_contact": "Kontakt — Orderly",
     "title_privacy": "Datenschutzrichtlinie — Orderly",
@@ -11,7 +10,6 @@
   "nav": {
     "home": "Startseite",
     "aboutProject": "Über die App",
-    "aboutUs": "Über uns",
     "pricing": "Preise",
     "contact": "Kontakt",
     "getStarted": "Jetzt starten"
@@ -137,7 +135,6 @@
     "features": "Funktionen",
     "pricing": "Preise",
     "aboutProject": "Über die App",
-    "aboutUs": "Über uns",
     "contact": "Kontakt",
     "help": "Hilfecenter",
     "privacy": "Datenschutzrichtlinie",
@@ -155,28 +152,6 @@
     "p6": "Die App ist benutzerfreundlich gestaltet und für aufstrebende Unternehmer geeignet, die möglicherweise keine fortgeschrittenen technischen Kenntnisse haben. Der Fokus lag auf einfachen, gut organisierten Oberflächen, die Nutzern schnellen und einfachen Zugang zu benötigten Informationen ermöglichen. Das System unterstützt auch zukünftige Erweiterungen für neue Funktionen, die den Bedürfnissen verschiedener Geschäftstypen entsprechen.",
     "p7": "Die Vision des Projekts ist es, eine integrierte Managementplattform für alle Arten von Unternehmen zu werden, die vom E-Commerce abhängen, und die digitale Transformation kleiner und mittlerer Unternehmen zu unterstützen, indem professionelle Tools zu erschwinglichen Kosten mit vereinfachten Betriebsabläufen bereitgestellt werden.",
     "p8": "Orderly strebt danach, Unternehmern und Geschäftsinhabern zu helfen, ihre Betriebe effizienter zu verwalten, Verluste durch Verwaltungsfehler zu reduzieren und ihre Fähigkeit zur Planung und Entscheidungsfindung zu verbessern — und so die Chancen auf Erfolg, Nachhaltigkeit und langfristiges Wachstum ihrer Unternehmen zu erhöhen."
-  },
-  "aboutUs": {
-    "heroTitle": "Über uns",
-    "heroDesc": "Das Team hinter Orderly — von der Idee bis zur Umsetzung",
-    "storyTitle": "Unsere Geschichte",
-    "storyP1": "Orderly begann mit einer Idee von Mustafa Taha, der die Herausforderungen erkannte, denen Social-Media-Verkäufer bei der Verwaltung von Bestellungen, Lagerbeständen und Konten gegenüberstehen. Aus dieser Idee heraus begann die Arbeit an einem integrierten System, das ihre Bedürfnisse wirklich erfüllt.",
-    "storyP2": "Mustafa Taha leitet die ganzheitliche Entwicklung der Plattform — von Engineering und Produkt über Analysen bis hin zu strategischen Entscheidungen — unterstützt vom Team Finanzen & Buchhaltung: Rawan Fouad, Taysir Adel und Zahra Alaa.",
-    "teamTitle": "Unser Team",
-    "teamDesc": "Führungskompetenz und Expertise an der Schnittstelle von Technologie und Finanzen",
-    "member1Name": "Mustafa Taha",
-    "member1Role": "Gründer und Geschäftsführer",
-    "member1Bio": "Verantwortlich für Orderlys strategische Vision und die Aufsicht über Produktentwicklung, Software-Engineering, Analysen und operative Entscheidungsfindung.",
-    "accountingTeamTitle": "Finanzen & Buchhaltung",
-    "member2Name": "Rawan Fouad",
-    "member2Role": "Finanzdirektorin",
-    "member2Bio": "Leitet die Finanzfunktion des Projekts und überwacht die Gestaltung des Rechnungslegungsrahmens und der Finanzstandards innerhalb der Plattform.",
-    "member3Name": "Taysir Adel",
-    "member3Role": "Senior-Buchhalterin",
-    "member3Bio": "Verantwortlich für Buchhaltungsprozesse, Hauptbuchprüfung sowie die Sicherstellung der Genauigkeit und Zuverlässigkeit finanzieller Daten.",
-    "member4Name": "Zahra Alaa",
-    "member4Role": "Finanzanalytikerin",
-    "member4Bio": "Erstellt Finanzberichte und analytische Kennzahlen zur Unterstützung von Managemententscheidungen und zur Messung der Geschäftsleistung."
   },
   "pricing": {
     "heroTitle": "Preispläne",

@@ -304,7 +304,6 @@ function setActiveNavLink() {
   const map = {
     home: 'index.html',
     about: 'about.html',
-    aboutUs: 'about-us.html',
     pricing: 'pricing.html',
     contact: 'contact.html',
     privacy: 'privacy.html',

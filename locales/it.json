@@ -2,7 +2,6 @@
   "meta": {
     "title_home": "Orderly — Gestione ordini e inventario per venditori online",
     "title_about": "Informazioni sull'app — Orderly",
-    "title_aboutUs": "Chi siamo — Orderly",
     "title_pricing": "Prezzi — Orderly",
     "title_contact": "Contattaci — Orderly",
     "title_privacy": "Informativa sulla privacy — Orderly",
@@ -11,7 +10,6 @@
   "nav": {
     "home": "Home",
     "aboutProject": "Informazioni sull'app",
-    "aboutUs": "Chi siamo",
     "pricing": "Prezzi",
     "contact": "Contatti",
     "getStarted": "Inizia ora"
@@ -137,7 +135,6 @@
     "features": "Funzionalità",
     "pricing": "Prezzi",
     "aboutProject": "Informazioni sull'app",
-    "aboutUs": "Chi siamo",
     "contact": "Contatti",
     "help": "Centro assistenza",
     "privacy": "Informativa sulla privacy",
@@ -155,28 +152,6 @@
     "p6": "L'app è progettata per essere facile da usare e adatta ai proprietari di attività emergenti che potrebbero non avere competenze tecniche avanzate. L'attenzione è stata posta su interfacce semplici e ben organizzate che aiutano gli utenti ad accedere rapidamente e facilmente alle informazioni necessarie. Il sistema supporta anche un'espansione futura per aggiungere nuove funzionalità che soddisfino le esigenze di diversi tipi di attività commerciali.",
     "p7": "La visione del progetto è diventare una piattaforma di gestione integrata al servizio di tutti i tipi di attività che dipendono dall'e-commerce, e supportare la trasformazione digitale delle piccole e medie imprese fornendo strumenti professionali a un costo accessibile con procedure operative semplificate.",
     "p8": "Orderly aspira ad aiutare imprenditori e proprietari di attività a gestire le operazioni in modo più efficiente, ridurre le perdite causate da errori amministrativi e migliorare la capacità di pianificazione e decisione — aumentando così le possibilità di successo, sostenibilità e crescita a lungo termine delle loro attività."
-  },
-  "aboutUs": {
-    "heroTitle": "Chi siamo",
-    "heroDesc": "Il team dietro Orderly — dall'idea all'esecuzione",
-    "storyTitle": "La nostra storia",
-    "storyP1": "Orderly è nato da un'idea di Mustafa Taha, che ha notato le sfide che i venditori sui social media affrontano nella gestione di ordini, inventario e contabilità. Da quell'idea è iniziato il lavoro per costruire un sistema integrato che soddisfi davvero le loro esigenze.",
-    "storyP2": "Mustafa Taha guida lo sviluppo end-to-end della piattaforma — dall'ingegneria e il prodotto all'analitica e al processo decisionale esecutivo — con il supporto del team Finanza e Contabilità: Rawan Fouad, Taysir Adel e Zahra Alaa.",
-    "teamTitle": "Il nostro team",
-    "teamDesc": "Leadership ed expertise all'intersezione tra tecnologia e finanza",
-    "member1Name": "Mustafa Taha",
-    "member1Role": "Fondatore e Amministratore delegato",
-    "member1Bio": "Guida la visione strategica di Orderly e supervisiona lo sviluppo prodotto, l'ingegneria del software, l'analitica e il processo decisionale operativo.",
-    "accountingTeamTitle": "Finanza e Contabilità",
-    "member2Name": "Rawan Fouad",
-    "member2Role": "Direttrice finanziaria",
-    "member2Bio": "Guida la funzione finanziaria del progetto e supervisiona la progettazione del framework contabile e degli standard finanziari all'interno della piattaforma.",
-    "member3Name": "Taysir Adel",
-    "member3Role": "Contabile senior",
-    "member3Bio": "Responsabile delle operazioni contabili, della revisione del libro mastro e della garanzia di accuratezza e affidabilità dei dati finanziari.",
-    "member4Name": "Zahra Alaa",
-    "member4Role": "Analista finanziaria",
-    "member4Bio": "Sviluppa report finanziari e metriche analitiche a supporto delle decisioni di management e della misurazione delle performance aziendali."
   },
   "pricing": {
     "heroTitle": "Piani tariffari",

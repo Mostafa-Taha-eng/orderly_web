@@ -2,7 +2,6 @@
   "meta": {
     "title_home": "Orderly — Gestion des commandes et des stocks pour vendeurs en ligne",
     "title_about": "À propos de l'application — Orderly",
-    "title_aboutUs": "À propos de nous — Orderly",
     "title_pricing": "Tarifs — Orderly",
     "title_contact": "Contactez-nous — Orderly",
     "title_privacy": "Politique de confidentialité — Orderly",
@@ -11,7 +10,6 @@
   "nav": {
     "home": "Accueil",
     "aboutProject": "À propos de l'application",
-    "aboutUs": "À propos de nous",
     "pricing": "Tarifs",
     "contact": "Contact",
     "getStarted": "Commencer"
@@ -137,7 +135,6 @@
     "features": "Fonctionnalités",
     "pricing": "Tarifs",
     "aboutProject": "À propos de l'application",
-    "aboutUs": "À propos de nous",
     "contact": "Contact",
     "help": "Centre d'aide",
     "privacy": "Politique de confidentialité",
@@ -155,28 +152,6 @@
     "p6": "L'application est conçue pour être facile à utiliser et adaptée aux propriétaires d'entreprises émergentes qui peuvent ne pas disposer d'une expertise technique avancée. L'accent a été mis sur des interfaces simples et bien organisées permettant aux utilisateurs d'accéder rapidement et facilement aux informations dont ils ont besoin. Le système prend également en charge une expansion future pour ajouter de nouvelles fonctionnalités répondant aux besoins de différents types d'activités commerciales.",
     "p7": "La vision du projet est de devenir une plateforme de gestion intégrée au service de tous les types d'entreprises qui dépendent du commerce électronique, et de soutenir la transformation numérique des petites et moyennes entreprises en fournissant des outils professionnels à un coût abordable avec des procédures opérationnelles simplifiées.",
     "p8": "Orderly aspire à aider les entrepreneurs et propriétaires d'entreprise à gérer leurs opérations plus efficacement, à réduire les pertes causées par les erreurs administratives et à améliorer leur capacité de planification et de prise de décision — augmentant ainsi les chances de succès, de durabilité et de croissance à long terme de leurs entreprises."
-  },
-  "aboutUs": {
-    "heroTitle": "À propos de nous",
-    "heroDesc": "L'équipe derrière Orderly — de l'idée à l'exécution",
-    "storyTitle": "Notre histoire",
-    "storyP1": "Orderly est né d'une idée de Mustafa Taha, qui a constaté les défis auxquels les vendeurs sur les réseaux sociaux sont confrontés pour gérer leurs commandes, leur inventaire et leurs comptes. À partir de cette idée, le travail a commencé pour construire un système intégré répondant vraiment à leurs besoins.",
-    "storyP2": "Mustafa Taha dirige le développement de la plateforme de bout en bout — de l'ingénierie et le produit à l'analytique et la prise de décisions exécutives — avec le soutien de l'équipe Finance et Comptabilité : Rawan Fouad, Taysir Adel et Zahra Alaa.",
-    "teamTitle": "Notre équipe",
-    "teamDesc": "Leadership et expertise à l'intersection de la technologie et de la finance",
-    "member1Name": "Mustafa Taha",
-    "member1Role": "Fondateur et Directeur général",
-    "member1Bio": "Dirige la vision stratégique d'Orderly et supervise le développement produit, l'ingénierie logicielle, l'analytique et la prise de décisions opérationnelles.",
-    "accountingTeamTitle": "Finance et Comptabilité",
-    "member2Name": "Rawan Fouad",
-    "member2Role": "Directrice des finances",
-    "member2Bio": "Dirige la fonction financière du projet et supervise la conception du cadre comptable et des normes financières au sein de la plateforme.",
-    "member3Name": "Taysir Adel",
-    "member3Role": "Comptable senior",
-    "member3Bio": "Responsable des opérations comptables, de la revue des grands livres et de l'exactitude et de la fiabilité des données financières.",
-    "member4Name": "Zahra Alaa",
-    "member4Role": "Analyste financière",
-    "member4Bio": "Élabore des rapports financiers et des indicateurs analytiques pour soutenir les décisions de la direction et mesurer la performance de l'entreprise."
   },
   "pricing": {
     "heroTitle": "Plans tarifaires",

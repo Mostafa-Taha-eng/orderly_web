@@ -2,7 +2,6 @@
   "meta": {
     "title_home": "Orderly — 在线卖家的订单与库存管理",
     "title_about": "关于应用 — Orderly",
-    "title_aboutUs": "关于我们 — Orderly",
     "title_pricing": "定价 — Orderly",
     "title_contact": "联系我们 — Orderly",
     "title_privacy": "隐私政策 — Orderly",
@@ -11,7 +10,6 @@
   "nav": {
     "home": "首页",
     "aboutProject": "关于应用",
-    "aboutUs": "关于我们",
     "pricing": "定价",
     "contact": "联系我们",
     "getStarted": "立即开始"
@@ -137,7 +135,6 @@
     "features": "功能",
     "pricing": "定价",
     "aboutProject": "关于应用",
-    "aboutUs": "关于我们",
     "contact": "联系我们",
     "help": "帮助中心",
     "privacy": "隐私政策",
@@ -155,28 +152,6 @@
     "p6": "该应用设计简洁易用，适合可能没有高级技术经验的新兴企业主。重点在于提供简单、组织良好的界面，帮助用户快速、轻松地获取所需信息。系统还支持未来扩展，以添加满足不同类型商业活动需求的新功能。",
     "p7": "项目愿景是成为服务于所有依赖电子商务的企业类型的集成管理平台，并通过以可承受的成本提供专业工具和简化的操作流程，支持中小企业的数字化转型。",
     "p8": "Orderly 致力于帮助企业家和企业主更高效地管理运营，减少因管理错误造成的损失，并提高规划和决策能力 — 最终增加业务成功、可持续性和长期增长的机会。"
-  },
-  "aboutUs": {
-    "heroTitle": "关于我们",
-    "heroDesc": "Orderly 背后的团队——从想法到落地",
-    "storyTitle": "我们的故事",
-    "storyP1": "Orderly 始于 Mustafa Taha 的一个想法——他注意到社交媒体卖家在管理订单、库存和账目时所面临的挑战。基于这一想法，团队开始构建一个真正满足他们需求的集成系统。",
-    "storyP2": "Mustafa Taha 全面领导平台的端到端开发——涵盖工程与产品、数据分析及高管决策——并得到财务与会计团队的支持：Rawan Fouad、Taysir Adel 和 Zahra Alaa。",
-    "teamTitle": "我们的团队",
-    "teamDesc": "汇聚技术与财务领域的领导力和专业能力",
-    "member1Name": "Mustafa Taha",
-    "member1Role": "创始人兼首席执行官",
-    "member1Bio": "负责 Orderly 的战略愿景，并统筹产品开发、软件工程、数据分析及运营决策。",
-    "accountingTeamTitle": "财务与会计",
-    "member2Name": "Rawan Fouad",
-    "member2Role": "财务总监",
-    "member2Bio": "负责项目的财务职能，并统筹平台内会计框架及财务标准的制定。",
-    "member3Name": "Taysir Adel",
-    "member3Role": "高级会计师",
-    "member3Bio": "负责会计运营、账簿审核，以及确保财务数据的准确性与可靠性。",
-    "member4Name": "Zahra Alaa",
-    "member4Role": "财务分析师",
-    "member4Bio": "编制财务报告与分析指标，支持管理决策并衡量业务绩效。"
   },
   "pricing": {
     "heroTitle": "定价方案",

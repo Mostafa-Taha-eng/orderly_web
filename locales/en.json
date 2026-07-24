@@ -2,7 +2,6 @@
   "meta": {
     "title_home": "Orderly — Order & Inventory Management for Online Sellers",
     "title_about": "About the App — Orderly",
-    "title_aboutUs": "About Us — Orderly",
     "title_pricing": "Pricing — Orderly",
     "title_contact": "Contact Us — Orderly",
     "title_privacy": "Privacy Policy — Orderly",
@@ -11,7 +10,6 @@
   "nav": {
     "home": "Home",
     "aboutProject": "About the App",
-    "aboutUs": "About Us",
     "pricing": "Pricing",
     "contact": "Contact",
     "getStarted": "Get Started"
@@ -137,7 +135,6 @@
     "features": "Features",
     "pricing": "Pricing",
     "aboutProject": "About the App",
-    "aboutUs": "About Us",
     "contact": "Contact",
     "help": "Help Center",
     "privacy": "Privacy Policy",
@@ -155,28 +152,6 @@
     "p6": "The app is designed to be easy to use and suitable for emerging business owners who may not have advanced technical expertise. The focus has been on providing simple, well-organized interfaces that help users access the information they need quickly and easily. The system also supports future expansion to add new features that meet the needs of different types of commercial activities.",
     "p7": "The project's vision is to become an integrated management platform serving all types of businesses that depend on e-commerce, and to support the digital transformation of small and medium enterprises by providing professional tools at an affordable cost with simplified operating procedures.",
     "p8": "Orderly aspires to help entrepreneurs and business owners manage their operations more efficiently, reduce losses caused by administrative errors, and improve their ability to plan and make decisions — ultimately increasing the chances of success, sustainability, and long-term growth for their businesses."
-  },
-  "aboutUs": {
-    "heroTitle": "About Us",
-    "heroDesc": "The team behind Orderly — from idea to execution",
-    "storyTitle": "Our Story",
-    "storyP1": "Orderly began with an idea from Mustafa Taha, who noticed the challenges social media sellers face managing orders, inventory, and accounts. From that idea, work started on building an integrated system that truly meets their needs.",
-    "storyP2": "Mustafa Taha leads the platform's end-to-end development — from engineering and product to analytics and executive decision-making — supported by the Finance & Accounting team: Rawan Fouad, Taysir Adel, and Zahra Alaa.",
-    "teamTitle": "Our Team",
-    "teamDesc": "Leadership and expertise spanning technology and finance",
-    "member1Name": "Mustafa Taha",
-    "member1Role": "Founder & Chief Executive Officer",
-    "member1Bio": "Leads Orderly's strategic vision and oversees product development, software engineering, analytics, and operational decision-making.",
-    "accountingTeamTitle": "Finance & Accounting",
-    "member2Name": "Rawan Fouad",
-    "member2Role": "Director of Finance",
-    "member2Bio": "Leads the project's financial function and oversees the design of the accounting framework and financial standards within the platform.",
-    "member3Name": "Taysir Adel",
-    "member3Role": "Senior Accountant",
-    "member3Bio": "Responsible for accounting operations, ledger review, and ensuring the accuracy and reliability of financial data.",
-    "member4Name": "Zahra Alaa",
-    "member4Role": "Financial Analyst",
-    "member4Bio": "Develops financial reports and analytical metrics to support management decisions and measure business performance."
   },
   "pricing": {
     "heroTitle": "Pricing Plans",
