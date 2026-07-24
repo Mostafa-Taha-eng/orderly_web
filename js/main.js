@@ -18,14 +18,17 @@ function initMobileNav() {
   if (!toggle || !navLinks) return;
 
   toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active');
-    navLinks.classList.toggle('open');
+    const open = !navLinks.classList.contains('open');
+    toggle.classList.toggle('active', open);
+    navLinks.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
   });
 
   navLinks.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       toggle.classList.remove('active');
       navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
 }

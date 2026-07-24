@@ -5,7 +5,19 @@
     "title_pricing": "मूल्य निर्धारण — Orderly",
     "title_contact": "संपर्क करें — Orderly",
     "title_privacy": "गोपनीयता नीति — Orderly",
-    "title_terms": "नियम और शर्तें — Orderly"
+    "title_terms": "नियम और शर्तें — Orderly",
+    "desc_home": "Orderly is a mini ERP for social sellers — manage orders, inventory, and accounting with Manager, Admin, Marketer, and Stock & Communications apps.",
+    "desc_about": "Learn about the Orderly project and how it helps online sellers manage orders, inventory, and financial reports in one place.",
+    "desc_pricing": "Orderly monthly and yearly plans based on team size — start organizing your business today.",
+    "desc_contact": "Contact Orderly support via form, WhatsApp, or email — we are here to help.",
+    "desc_privacy": "Orderly Privacy Policy: how we collect, protect, and use your data transparently.",
+    "desc_terms": "Terms and conditions for using the Orderly app and order/inventory management services.",
+    "keywords_home": "Orderly, order management, inventory, accounting, online sellers",
+    "keywords_about": "Orderly, about, ERP, e-commerce",
+    "keywords_pricing": "Orderly, pricing, subscription, plans",
+    "keywords_contact": "Orderly, support, contact, help",
+    "keywords_privacy": "Orderly, privacy, data protection",
+    "keywords_terms": "Orderly, terms, conditions"
   },
   "nav": {
     "home": "होम",

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block tooling / private paths
+Disallow: /downloads/
+Disallow: /.git/
+Disallow: /html/
+Disallow: /assets/legal_texts_all_languages.md
+Disallow: /assets/apps/
+
+# Brand assets for social crawlers / sharing
+Allow: /assets/logos/
+Allow: /assets/screen_shots/
+
+Sitemap: https://mostafa-taha-eng.github.io/orderly_web/sitemap.xml

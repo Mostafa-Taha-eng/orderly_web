@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orderly</title>
+  <title>عن التطبيق — Orderly</title>
   <link rel="icon" type="image/png" href="assets/logos/manager_logo.png">
   <link rel="apple-touch-icon" href="assets/logos/manager_logo.png">
+  <!-- orderly-seo-head -->
+  <meta name="description" content="تعرّف على مشروع Orderly وكيف يساعد التجار أونلاين على إدارة الطلبات والمخزون والتقارير المالية من مكان واحد.">
+  <meta name="keywords" content="Orderly, عن التطبيق, ERP, تجارة إلكترونية">
+  <meta name="author" content="Orderly">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#2A4ECA">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="google-site-verification" content="">
+  <meta name="msvalidate.01" content="">
+  <link rel="canonical" href="./about.html">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Orderly">
+  <meta property="og:title" content="عن التطبيق — Orderly">
+  <meta property="og:description" content="تعرّف على مشروع Orderly وكيف يساعد التجار أونلاين على إدارة الطلبات والمخزون والتقارير المالية من مكان واحد.">
+  <meta property="og:image" content="assets/logos/manager_logo.png">
+  <meta property="og:url" content="./about.html">
+  <meta property="og:locale" content="ar_EG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="عن التطبيق — Orderly">
+  <meta name="twitter:description" content="تعرّف على مشروع Orderly وكيف يساعد التجار أونلاين على إدارة الطلبات والمخزون والتقارير المالية من مكان واحد.">
+  <meta name="twitter:image" content="assets/logos/manager_logo.png">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<!-- /orderly-seo-head -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,6 +40,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="about">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <nav class="navbar">
     <div class="container">
@@ -20,7 +48,7 @@
         <span class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></span>
         Orderly
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-nav">
         <li><a href="index.html" data-i18n="nav.home"></a></li>
         <li><a href="about.html" data-i18n="nav.aboutProject"></a></li>
         <li><a href="pricing.html" data-i18n="nav.pricing"></a></li>
@@ -39,13 +67,14 @@
           <span class="icon-moon">🌙</span>
         </button>
         <a href="index.html#download" class="btn btn-primary" data-i18n="nav.getStarted"></a>
-        <button class="menu-toggle" type="button" aria-label="Menu">
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </nav>
 
+  <main id="main-content">
   <section class="page-hero">
     <div class="container">
       <h1 data-i18n="aboutProject.heroTitle"></h1>
@@ -75,6 +104,8 @@
       </div>
     </div>
   </section>
+  </main>
+
 
   <footer class="footer">
     <div class="container">
@@ -116,8 +147,10 @@
     </div>
   </footer>
 
-  <script src="js/theme.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/site-config.js" defer></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/seo.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

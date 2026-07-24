@@ -1,20 +1,20 @@
 /**
- * Orderly â€” Simple i18n System
+ * Orderly — Simple i18n System
  */
 const OrderlyI18n = (() => {
   const STORAGE_KEY = 'orderly-lang';
   const DEFAULT_LANG = 'ar';
-  const LOCALE_VERSION = '4';
+  const LOCALE_VERSION = '5';
 
   const LANGUAGES = [
-    { code: 'ar', name: 'ط§ظ„ط¹ط±ط¨ظٹط©', flag: 'ًں‡¸ًں‡¦' },
-    { code: 'en', name: 'English', flag: 'ًں‡¬ًں‡§' },
-    { code: 'fr', name: 'Franأ§ais', flag: 'ًں‡«ًں‡·' },
-    { code: 'de', name: 'Deutsch', flag: 'ًں‡©ًں‡ھ' },
-    { code: 'zh', name: 'ن¸­و–‡', flag: 'ًں‡¨ًں‡³' },
-    { code: 'hi', name: 'à¤¹à¤؟à¤¨à¥چà¤¦à¥€', flag: 'ًں‡®ًں‡³' },
-    { code: 'ru', name: 'ذ رƒرپرپذ؛ذ¸ذ¹', flag: 'ًں‡·ًں‡؛' },
-    { code: 'it', name: 'Italiano', flag: 'ًں‡®ًں‡¹' }
+    { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: 'zh', name: '中文', flag: '🇨🇳' },
+    { code: 'hi', name: 'हिन्दी', flag: '🇮🇳' },
+    { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹' }
   ];
 
   let currentLang = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;

@@ -1,0 +1,26 @@
+{
+  "name": "Orderly",
+  "short_name": "Orderly",
+  "description": "Mini ERP for managing orders, inventory, and accounting for online sellers.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F5F9FE",
+  "theme_color": "#2A4ECA",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "assets/logos/manager_logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logos/manager_logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

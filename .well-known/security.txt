@@ -1,0 +1,4 @@
+Contact: mailto:support@orderly.app
+Preferred-Languages: ar, en
+Canonical: https://mostafa-taha-eng.github.io/orderly_web/.well-known/security.txt
+Expires: 2027-07-24T00:00:00.000Z
