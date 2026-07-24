@@ -76,7 +76,8 @@
     "warehouseTitle": "Staff magazzino e comunicazioni",
     "warehouseTag": "Stock & Comms",
     "warehouseDesc1": "Le comunicazioni contattano il cliente per confermare ordine, dati cliente e dati dell’ordine.",
-    "warehouseDesc2": "Il magazzino riceve gli ordini confermati, li prepara e li invia al corriere."
+    "warehouseDesc2": "Il magazzino riceve gli ordini confermati, li prepara e li invia al corriere.",
+    "warehouseDesc": "• Le comunicazioni contattano il cliente per confermare ordine, dati cliente e dati dell'ordine.\n\n• Il magazzino riceve gli ordini confermati, li prepara e li invia al corriere."
   },
   "howItWorks": {
     "label": "Come funziona",
@@ -125,7 +126,8 @@
     "downloading": "Download in corso...",
     "downloadDone": "✓ Scaricato",
     "warehouseDesc1": "Le comunicazioni contattano il cliente per confermare ordine, dati cliente e dati dell’ordine.",
-    "warehouseDesc2": "Il magazzino riceve gli ordini confermati, li prepara e li invia al corriere."
+    "warehouseDesc2": "Il magazzino riceve gli ordini confermati, li prepara e li invia al corriere.",
+    "warehouseDesc": "• Le comunicazioni contattano il cliente per confermare ordine, dati cliente e dati dell'ordine.\n\n• Il magazzino riceve gli ordini confermati, li prepara e li invia al corriere."
   },
   "footer": {
     "desc": "Orderly — Mini ERP che aiuta i venditori sui social media a gestire ordini, inventario e contabilità.",
@@ -323,7 +325,9 @@
   "screenshots": {
     "label": "Screenshot",
     "title": "Scopri l’app dall’interno",
-    "desc": "Un’interfaccia chiara per ordini, magazzino e report finanziari"
+    "desc": "Un’interfaccia chiara per ordini, magazzino e report finanziari",
+    "prev": "Precedente",
+    "next": "Successivo"
   },
   "faq": {
     "label": "FAQ",

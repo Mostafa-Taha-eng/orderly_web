@@ -225,10 +225,7 @@
           </div>
           <h3 data-i18n="roles.warehouseTitle"></h3>
           <span class="role-tag" data-i18n="roles.warehouseTag"></span>
-          <ul class="role-points">
-            <li data-i18n="roles.warehouseDesc1"></li>
-            <li data-i18n="roles.warehouseDesc2"></li>
-          </ul>
+          <p class="desc-multi" data-i18n="roles.warehouseDesc"></p>
         </div>
       </div>
     </div>
@@ -305,10 +302,7 @@
             <img src="assets/logos/communications_stock_logo.png" alt="" width="56" height="56">
           </div>
           <h3 data-i18n="download.warehouseTitle"></h3>
-          <ul class="download-points">
-            <li data-i18n="download.warehouseDesc1"></li>
-            <li data-i18n="download.warehouseDesc2"></li>
-          </ul>
+          <p class="desc-multi" data-i18n="download.warehouseDesc"></p>
           <button type="button" class="btn btn-primary btn-block download-btn" data-role="warehouse" data-i18n="download.downloadBtn"></button>
         </div>
       </div>
@@ -323,32 +317,25 @@
         <h2 class="section-title" data-i18n="screenshots.title"></h2>
         <p class="section-desc" data-i18n="screenshots.desc"></p>
       </div>
-      <div class="screenshots-gallery">
-        <button type="button" class="shot-card shot-featured">
-          <img src="assets/screen_shots/home_screen.jpg" alt="Home screen" loading="lazy">
-        </button>
-        <button type="button" class="shot-card">
-          <img src="assets/screen_shots/view_orders.jpg" alt="Orders" loading="lazy">
-        </button>
-        <button type="button" class="shot-card">
-          <img src="assets/screen_shots/order_details.jpg" alt="Order details" loading="lazy">
-        </button>
-        <button type="button" class="shot-card">
-          <img src="assets/screen_shots/accounting_dashboard.jpg" alt="Accounting dashboard" loading="lazy">
-        </button>
-        <button type="button" class="shot-card">
-          <img src="assets/screen_shots/accounting_orders_view_status_and_KPIs.jpg" alt="KPIs" loading="lazy">
-        </button>
-        <button type="button" class="shot-card">
-          <img src="assets/screen_shots/notifications.jpg" alt="Notifications" loading="lazy">
-        </button>
-        <button type="button" class="shot-card">
-          <img src="assets/screen_shots/employees_login_status.jpg" alt="Employees" loading="lazy">
-        </button>
-        <button type="button" class="shot-card">
-          <img src="assets/screen_shots/accounting_revenu_statment.jpg" alt="Revenue statement" loading="lazy">
-        </button>
+      <div class="shots-carousel" dir="ltr">
+        <button type="button" class="shots-nav shots-prev" data-i18n-aria="screenshots.prev" aria-label="Previous">‹</button>
+        <div class="shots-viewport">
+          <div class="shots-track">
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/home_screen.jpg" alt="Home screen" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/view_orders.jpg" alt="Orders" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/order_details.jpg" alt="Order details" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/accounting_dashboard.jpg" alt="Accounting dashboard" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/accounting_orders_view_status_and_KPIs.jpg" alt="KPIs" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/notifications.jpg" alt="Notifications" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/employees_login_status.jpg" alt="Employees" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/accounting_revenu_statment.jpg" alt="Revenue statement" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/settings_1.jpg" alt="Settings" loading="lazy"></div></div>
+            <div class="shot-slide"><div class="shot-phone"><img src="assets/screen_shots/about_app.jpg" alt="About app" loading="lazy"></div></div>
+          </div>
+        </div>
+        <button type="button" class="shots-nav shots-next" data-i18n-aria="screenshots.next" aria-label="Next">›</button>
       </div>
+      <div class="shots-dots" aria-hidden="true"></div>
     </div>
   </section>
 
@@ -366,98 +353,98 @@
             <span data-i18n="faq.q1"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a1"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a1"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q2"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a2"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a2"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q3"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a3"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a3"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q4"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a4"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a4"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q5"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a5"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a5"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q6"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a6"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a6"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q7"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a7"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a7"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q8"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a8"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a8"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q9"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a9"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a9"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q10"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a10"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a10"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q11"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a11"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a11"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q12"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a12"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a12"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q13"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a13"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a13"></p></div></div>
         </div>
         <div class="faq-item">
           <button type="button" class="faq-question" aria-expanded="false">
             <span data-i18n="faq.q14"></span>
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
-          <div class="faq-answer"><p data-i18n="faq.a14"></p></div>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="faq.a14"></p></div></div>
         </div>
       </div>
     </div>

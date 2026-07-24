@@ -76,7 +76,8 @@
     "warehouseTitle": "Lager- & Kommunikationsmitarbeiter",
     "warehouseTag": "Stock & Comms",
     "warehouseDesc1": "Die Kommunikation kontaktiert den Kunden zur Bestätigung von Bestellung, Kundendaten und Auftragsdaten.",
-    "warehouseDesc2": "Das Lager erhält bestätigte Bestellungen, bereitet sie vor und übergibt sie an das Versandunternehmen."
+    "warehouseDesc2": "Das Lager erhält bestätigte Bestellungen, bereitet sie vor und übergibt sie an das Versandunternehmen.",
+    "warehouseDesc": "• Die Kommunikation kontaktiert den Kunden zur Bestätigung von Bestellung, Kundendaten und Auftragsdaten.\n\n• Das Lager erhält bestätigte Bestellungen, bereitet sie vor und übergibt sie an das Versandunternehmen."
   },
   "howItWorks": {
     "label": "So funktioniert's",
@@ -125,7 +126,8 @@
     "downloading": "Wird heruntergeladen...",
     "downloadDone": "✓ Heruntergeladen",
     "warehouseDesc1": "Die Kommunikation kontaktiert den Kunden zur Bestätigung von Bestellung, Kundendaten und Auftragsdaten.",
-    "warehouseDesc2": "Das Lager erhält bestätigte Bestellungen, bereitet sie vor und übergibt sie an das Versandunternehmen."
+    "warehouseDesc2": "Das Lager erhält bestätigte Bestellungen, bereitet sie vor und übergibt sie an das Versandunternehmen.",
+    "warehouseDesc": "• Die Kommunikation kontaktiert den Kunden zur Bestätigung von Bestellung, Kundendaten und Auftragsdaten.\n\n• Das Lager erhält bestätigte Bestellungen, bereitet sie vor und übergibt sie an das Versandunternehmen."
   },
   "footer": {
     "desc": "Orderly — Mini-ERP, das Social-Media-Händlern hilft, Aufträge, Lager und Buchhaltung zu verwalten.",
@@ -323,7 +325,9 @@
   "screenshots": {
     "label": "Screenshots",
     "title": "Sehen Sie die App von innen",
-    "desc": "Eine klare Oberfläche für Bestellungen, Lager und Finanzberichte"
+    "desc": "Eine klare Oberfläche für Bestellungen, Lager und Finanzberichte",
+    "prev": "Zurück",
+    "next": "Weiter"
   },
   "faq": {
     "label": "FAQ",

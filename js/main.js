@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initScrollEffects();
   initFaqAccordion();
-  initScreenshotLightbox();
+  initScreenshotCarousel();
   initContactForms();
   initContactTabs();
   initBillingToggle();
@@ -70,7 +70,7 @@ function initScrollEffects() {
     '.team-card',
     '.social-contact-card',
     '.faq-item',
-    '.shot-card',
+    '.shots-carousel',
     '.section-header'
   ];
 
@@ -103,38 +103,97 @@ function initFaqAccordion() {
   });
 }
 
-function initScreenshotLightbox() {
-  const gallery = document.querySelector('.screenshots-gallery');
-  if (!gallery) return;
+function initScreenshotCarousel() {
+  const carousel = document.querySelector('.shots-carousel');
+  if (!carousel) return;
 
-  let overlay = document.querySelector('.shot-lightbox');
-  if (!overlay) {
-    overlay = document.createElement('div');
-    overlay.className = 'shot-lightbox';
-    overlay.innerHTML = '<button type="button" class="shot-lightbox-close" aria-label="Close">×</button><img alt="">';
-    document.body.appendChild(overlay);
+  const track = carousel.querySelector('.shots-track');
+  const slides = [...carousel.querySelectorAll('.shot-slide')];
+  const prevBtn = carousel.querySelector('.shots-prev');
+  const nextBtn = carousel.querySelector('.shots-next');
+  const dotsWrap = document.querySelector('.shots-dots');
+  if (!track || !slides.length) return;
+
+  let index = 0;
+  let slideStep = 0;
+  let visibleCount = 3;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'shots-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap?.appendChild(dot);
+  });
+
+  const dots = dotsWrap ? [...dotsWrap.querySelectorAll('.shots-dot')] : [];
+
+  function measure() {
+    const slide = slides[0];
+    if (!slide) return;
+    const styles = getComputedStyle(track);
+    const gap = parseFloat(styles.gap) || 16;
+    slideStep = slide.offsetWidth + gap;
+
+    const viewport = carousel.querySelector('.shots-viewport');
+    if (!viewport) return;
+    visibleCount = Math.max(1, Math.round(viewport.offsetWidth / slideStep));
+    index = Math.min(index, Math.max(0, slides.length - visibleCount));
+    update(false);
   }
 
-  const img = overlay.querySelector('img');
-  const closeBtn = overlay.querySelector('.shot-lightbox-close');
+  function update(animate = true) {
+    track.style.transition = animate ? 'transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)' : 'none';
+    track.style.transform = `translateX(${-index * slideStep}px)`;
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+  }
 
-  const close = () => overlay.classList.remove('open');
+  function goTo(i) {
+    index = Math.max(0, Math.min(i, slides.length - visibleCount));
+    update();
+  }
 
-  gallery.querySelectorAll('.shot-card img').forEach((thumb) => {
-    thumb.parentElement?.addEventListener('click', () => {
-      img.src = thumb.src;
-      img.alt = thumb.alt || '';
-      overlay.classList.add('open');
-    });
+  function step(dir) {
+    goTo(index + dir);
+  }
+
+  prevBtn?.addEventListener('click', () => step(-1));
+  nextBtn?.addEventListener('click', () => step(1));
+
+  let startX = 0;
+  let dragging = false;
+
+  track.addEventListener('pointerdown', (e) => {
+    dragging = true;
+    startX = e.clientX;
+    track.setPointerCapture(e.pointerId);
+    track.style.transition = 'none';
   });
 
-  closeBtn?.addEventListener('click', close);
-  overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) close();
+  track.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const delta = e.clientX - startX;
+    track.style.transform = `translateX(${-index * slideStep + delta}px)`;
   });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') close();
+
+  track.addEventListener('pointerup', (e) => {
+    if (!dragging) return;
+    dragging = false;
+    const delta = e.clientX - startX;
+    if (Math.abs(delta) > 50) {
+      step(delta > 0 ? -1 : 1);
+    } else {
+      update();
+    }
   });
+
+  track.addEventListener('pointercancel', () => {
+    dragging = false;
+    update();
+  });
+
+  window.addEventListener('resize', () => measure());
+  measure();
 }
 
 function setActiveNavLink() {

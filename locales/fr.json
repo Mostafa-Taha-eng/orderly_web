@@ -76,7 +76,8 @@
     "warehouseTitle": "Personnel stock & communication",
     "warehouseTag": "Stock & Comms",
     "warehouseDesc1": "La communication contacte le client pour confirmer la commande, ses données et celles de la commande.",
-    "warehouseDesc2": "Le stock reçoit les commandes confirmées pour les préparer et les envoyer au transporteur."
+    "warehouseDesc2": "Le stock reçoit les commandes confirmées pour les préparer et les envoyer au transporteur.",
+    "warehouseDesc": "• La communication contacte le client pour confirmer la commande, ses données et celles de la commande.\n\n• Le stock reçoit les commandes confirmées pour les préparer et les envoyer au transporteur."
   },
   "howItWorks": {
     "label": "Comment ça marche",
@@ -125,7 +126,8 @@
     "downloading": "Téléchargement...",
     "downloadDone": "✓ Téléchargé",
     "warehouseDesc1": "La communication contacte le client pour confirmer la commande, ses données et celles de la commande.",
-    "warehouseDesc2": "Le stock reçoit les commandes confirmées pour les préparer et les envoyer au transporteur."
+    "warehouseDesc2": "Le stock reçoit les commandes confirmées pour les préparer et les envoyer au transporteur.",
+    "warehouseDesc": "• La communication contacte le client pour confirmer la commande, ses données et celles de la commande.\n\n• Le stock reçoit les commandes confirmées pour les préparer et les envoyer au transporteur."
   },
   "footer": {
     "desc": "Orderly — Mini ERP aidant les vendeurs sur les réseaux sociaux à gérer commandes, stocks et comptabilité.",
@@ -323,7 +325,9 @@
   "screenshots": {
     "label": "Captures d’écran",
     "title": "Découvrez l’application de l’intérieur",
-    "desc": "Une interface claire pour gérer commandes, stock et rapports financiers"
+    "desc": "Une interface claire pour gérer commandes, stock et rapports financiers",
+    "prev": "Précédent",
+    "next": "Suivant"
   },
   "faq": {
     "label": "FAQ",

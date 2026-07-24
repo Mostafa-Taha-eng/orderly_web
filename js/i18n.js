@@ -4,6 +4,7 @@
 const OrderlyI18n = (() => {
   const STORAGE_KEY = 'orderly-lang';
   const DEFAULT_LANG = 'ar';
+  const LOCALE_VERSION = '3';
 
   const LANGUAGES = [
     { code: 'ar', name: 'العربية', flag: '🇸🇦' },
@@ -20,7 +21,15 @@ const OrderlyI18n = (() => {
   let translations = {};
 
   function getBasePath() {
-    return '';
+    const script = document.querySelector('script[src*="i18n.js"]');
+    if (script?.src) {
+      const url = new URL(script.src, window.location.href);
+      return url.pathname.replace(/js\/i18n\.js.*$/i, '');
+    }
+
+    const path = window.location.pathname;
+    const lastSlash = path.lastIndexOf('/');
+    return lastSlash >= 0 ? path.slice(0, lastSlash + 1) : '/';
   }
 
   function t(key) {
@@ -33,17 +42,17 @@ const OrderlyI18n = (() => {
         return key;
       }
     }
-    return value ?? key;
+    return typeof value === 'string' ? value : key;
   }
 
   function applyTranslations() {
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const key = el.getAttribute('data-i18n');
-      const text = t(key);
-      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        if (el.hasAttribute('data-i18n-placeholder')) return;
+      if (!key) return;
+      if ((el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') && el.hasAttribute('data-i18n-placeholder')) {
+        return;
       }
-      el.textContent = text;
+      el.textContent = t(key);
     });
 
     document.querySelectorAll('[data-i18n-html]').forEach((el) => {
@@ -69,6 +78,10 @@ const OrderlyI18n = (() => {
 
     document.documentElement.lang = currentLang;
     document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+    document.dispatchEvent(new CustomEvent('orderly:i18n-ready', {
+      detail: { lang: currentLang }
+    }));
   }
 
   function updateLangSwitcher() {
@@ -85,9 +98,11 @@ const OrderlyI18n = (() => {
 
   async function loadLanguage(lang) {
     const base = getBasePath();
+    const url = `${base}locales/${lang}.json?v=${LOCALE_VERSION}`;
+
     try {
-      const res = await fetch(`${base}locales/${lang}.json`);
-      if (!res.ok) throw new Error('Failed to load locale');
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`Failed to load locale: ${url}`);
       translations = await res.json();
       currentLang = lang;
       localStorage.setItem(STORAGE_KEY, lang);

@@ -76,7 +76,8 @@
     "warehouseTitle": "Inventory & Communications Staff",
     "warehouseTag": "Stock & Comms",
     "warehouseDesc1": "Communications contacts the customer to confirm the order, customer details, and order data.",
-    "warehouseDesc2": "Inventory receives confirmed orders to prepare them and send them to the shipping company."
+    "warehouseDesc2": "Inventory receives confirmed orders to prepare them and send them to the shipping company.",
+    "warehouseDesc": "• Communications contacts the customer to confirm the order, customer details, and order data.\n\n• Inventory receives confirmed orders to prepare them and send them to the shipping company."
   },
   "howItWorks": {
     "label": "How It Works",
@@ -125,7 +126,8 @@
     "downloading": "Downloading...",
     "downloadDone": "✓ Downloaded",
     "warehouseDesc1": "Communications contacts the customer to confirm the order, customer details, and order data.",
-    "warehouseDesc2": "Inventory receives confirmed orders to prepare them and send them to the shipping company."
+    "warehouseDesc2": "Inventory receives confirmed orders to prepare them and send them to the shipping company.",
+    "warehouseDesc": "• Communications contacts the customer to confirm the order, customer details, and order data.\n\n• Inventory receives confirmed orders to prepare them and send them to the shipping company."
   },
   "footer": {
     "desc": "Orderly — Mini ERP helping social media sellers manage orders, inventory, and accounting.",
@@ -323,7 +325,9 @@
   "screenshots": {
     "label": "Screenshots",
     "title": "See the App From the Inside",
-    "desc": "A clear interface that simplifies orders, inventory, and financial reports"
+    "desc": "A clear interface that simplifies orders, inventory, and financial reports",
+    "prev": "Previous",
+    "next": "Next"
   },
   "faq": {
     "label": "FAQ",

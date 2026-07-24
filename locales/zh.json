@@ -76,7 +76,8 @@
     "warehouseTitle": "库存与沟通员工",
     "warehouseTag": "Stock & Comms",
     "warehouseDesc1": "沟通人员联系客户确认订单、客户资料与订单信息。",
-    "warehouseDesc2": "库存人员接收已确认订单，进行备货并交给物流公司。"
+    "warehouseDesc2": "库存人员接收已确认订单，进行备货并交给物流公司。",
+    "warehouseDesc": "• 沟通人员联系客户确认订单、客户资料与订单信息。\n\n• 库存人员接收已确认订单，进行备货并交给物流公司。"
   },
   "howItWorks": {
     "label": "工作原理",
@@ -125,7 +126,8 @@
     "downloading": "下载中...",
     "downloadDone": "✓ 已下载",
     "warehouseDesc1": "沟通人员联系客户确认订单、客户资料与订单信息。",
-    "warehouseDesc2": "库存人员接收已确认订单，进行备货并交给物流公司。"
+    "warehouseDesc2": "库存人员接收已确认订单，进行备货并交给物流公司。",
+    "warehouseDesc": "• 沟通人员联系客户确认订单、客户资料与订单信息。\n\n• 库存人员接收已确认订单，进行备货并交给物流公司。"
   },
   "footer": {
     "desc": "Orderly — 帮助社交媒体卖家管理订单、库存和账务的迷你 ERP。",
@@ -323,7 +325,9 @@
   "screenshots": {
     "label": "应用截图",
     "title": "走进应用内部",
-    "desc": "清晰界面，轻松管理订单、库存与财务报告"
+    "desc": "清晰界面，轻松管理订单、库存与财务报告",
+    "prev": "上一张",
+    "next": "下一张"
   },
   "faq": {
     "label": "常见问题",
