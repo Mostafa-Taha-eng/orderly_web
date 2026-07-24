@@ -111,45 +111,78 @@ function initScreenshotCarousel() {
   const slides = [...carousel.querySelectorAll('.shot-slide')];
   const prevBtn = carousel.querySelector('.shots-prev');
   const nextBtn = carousel.querySelector('.shots-next');
-  const dotsWrap = document.querySelector('.shots-dots');
-  if (!track || !slides.length) return;
+  const viewport = carousel.querySelector('.shots-viewport');
+  if (!track || !slides.length || !viewport) return;
 
   let index = 0;
   let slideStep = 0;
-  let visibleCount = 3;
+  let visibleCount = 1;
+  let pageCount = 1;
 
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.type = 'button';
-    dot.className = 'shots-dot' + (i === 0 ? ' active' : '');
-    dot.addEventListener('click', () => goTo(i));
-    dotsWrap?.appendChild(dot);
+  let overlay = document.querySelector('.shot-lightbox');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'shot-lightbox';
+    overlay.innerHTML = `
+      <button type="button" class="shot-lightbox-close" aria-label="Close">×</button>
+      <div class="shot-lightbox-frame">
+        <img alt="">
+      </div>
+    `;
+    document.body.appendChild(overlay);
+  }
+
+  const lightboxImg = overlay.querySelector('img');
+  const lightboxClose = overlay.querySelector('.shot-lightbox-close');
+
+  function openLightbox(src, alt) {
+    if (!lightboxImg) return;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  lightboxClose?.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
   });
 
-  const dots = dotsWrap ? [...dotsWrap.querySelectorAll('.shots-dot')] : [];
+  function getMaxIndex() {
+    return Math.max(0, pageCount - 1);
+  }
 
   function measure() {
     const slide = slides[0];
     if (!slide) return;
-    const styles = getComputedStyle(track);
-    const gap = parseFloat(styles.gap) || 16;
-    slideStep = slide.offsetWidth + gap;
 
-    const viewport = carousel.querySelector('.shots-viewport');
-    if (!viewport) return;
-    visibleCount = Math.max(1, Math.round(viewport.offsetWidth / slideStep));
-    index = Math.min(index, Math.max(0, slides.length - visibleCount));
+    const styles = getComputedStyle(track);
+    const gap = parseFloat(styles.gap) || 20;
+    slideStep = slide.offsetWidth + gap;
+    visibleCount = Math.max(1, Math.floor((viewport.offsetWidth + gap) / slideStep));
+    pageCount = Math.max(1, slides.length - visibleCount + 1);
+
+    index = Math.min(index, getMaxIndex());
     update(false);
   }
 
   function update(animate = true) {
     track.style.transition = animate ? 'transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)' : 'none';
     track.style.transform = `translateX(${-index * slideStep}px)`;
-    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+    prevBtn?.toggleAttribute('disabled', index <= 0);
+    nextBtn?.toggleAttribute('disabled', index >= getMaxIndex());
   }
 
   function goTo(i) {
-    index = Math.max(0, Math.min(i, slides.length - visibleCount));
+    index = Math.max(0, Math.min(i, getMaxIndex()));
     update();
   }
 
@@ -164,6 +197,7 @@ function initScreenshotCarousel() {
   let dragging = false;
 
   track.addEventListener('pointerdown', (e) => {
+    if (e.button !== 0) return;
     dragging = true;
     startX = e.clientX;
     track.setPointerCapture(e.pointerId);
@@ -173,23 +207,46 @@ function initScreenshotCarousel() {
   track.addEventListener('pointermove', (e) => {
     if (!dragging) return;
     const delta = e.clientX - startX;
-    track.style.transform = `translateX(${-index * slideStep + delta}px)`;
+    const minX = -getMaxIndex() * slideStep;
+    const maxX = 0;
+    let offset = -index * slideStep + delta;
+    offset = Math.max(minX, Math.min(maxX, offset));
+    track.style.transform = `translateX(${offset}px)`;
   });
 
   track.addEventListener('pointerup', (e) => {
     if (!dragging) return;
     dragging = false;
     const delta = e.clientX - startX;
-    if (Math.abs(delta) > 50) {
+
+    if (Math.abs(delta) > 40) {
       step(delta > 0 ? -1 : 1);
-    } else {
-      update();
+      return;
     }
+
+    update();
+
+    const phone = e.target.closest('.shot-phone');
+    if (!phone) return;
+    const img = phone.querySelector('img');
+    if (img) openLightbox(img.src, img.alt);
   });
 
   track.addEventListener('pointercancel', () => {
     dragging = false;
     update();
+  });
+
+  slides.forEach((slide) => {
+    const phone = slide.querySelector('.shot-phone');
+    phone?.setAttribute('role', 'button');
+    phone?.setAttribute('tabindex', '0');
+    phone?.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault();
+      const img = phone.querySelector('img');
+      if (img) openLightbox(img.src, img.alt);
+    });
   });
 
   window.addEventListener('resize', () => measure());

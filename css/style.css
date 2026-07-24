@@ -1963,7 +1963,7 @@ html[dir="rtl"] .pricing-badge {
 }
 
 .shot-slide {
-  flex: 0 0 150px;
+  flex: 0 0 140px;
 }
 
 .shot-phone {
@@ -1975,6 +1975,13 @@ html[dir="rtl"] .pricing-badge {
   border: 2px solid color-mix(in srgb, var(--color-on-surface) 16%, transparent);
   box-shadow: var(--shadow-md);
   overflow: hidden;
+  cursor: zoom-in;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.shot-phone:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
 
 .shot-phone img {
@@ -2005,34 +2012,76 @@ html[dir="rtl"] .pricing-badge {
   justify-content: center;
 }
 
-.shots-nav:hover {
+.shots-nav:hover:not(:disabled) {
   border-color: var(--color-primary);
   color: var(--color-primary);
   transform: scale(1.05);
 }
 
-.shots-dots {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-top: 1.25rem;
+.shots-nav:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
-.shots-dot {
-  width: 8px;
-  height: 8px;
+.shot-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(8, 12, 24, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.shot-lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.shot-lightbox-frame {
+  width: min(420px, 92vw);
+  max-height: 90vh;
+  aspect-ratio: 9 / 19.5;
+  border-radius: 28px;
+  padding: 10px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--color-on-surface) 10%, #fff), #eef2ff);
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.shot-lightbox-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 20px;
+  display: block;
+}
+
+.shot-lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  inset-inline-end: 1.25rem;
+  width: 46px;
+  height: 46px;
   border: 0;
   border-radius: 50%;
-  padding: 0;
-  background: color-mix(in srgb, var(--color-on-surface) 28%, transparent);
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
   cursor: pointer;
-  transition: transform 0.25s ease, background 0.25s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.shots-dot.active {
-  background: var(--color-primary);
-  transform: scale(1.25);
+.shot-lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: scale(1.05);
 }
 
 /* ========== FAQ ========== */
@@ -2207,13 +2256,13 @@ html[dir="rtl"] .pricing-badge {
   .team-grid { grid-template-columns: 1fr; }
   .team-grid-accounting { grid-template-columns: 1fr; }
   .social-contact-grid { grid-template-columns: 1fr; }
-  .shot-slide { flex-basis: 140px; }
+  .shot-slide { flex-basis: 128px; }
 }
 
 @media (max-width: 480px) {
   .download-grid { grid-template-columns: 1fr; }
   .contact-tabs { flex-direction: column; }
   .contact-tab { width: 100%; text-align: center; }
-  .shot-slide { flex-basis: 120px; }
+  .shot-slide { flex-basis: 112px; }
   .shots-nav { width: 38px; height: 38px; font-size: 1.25rem; }
 }
