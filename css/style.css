@@ -1337,11 +1337,6 @@ html[dir="rtl"] .billing-toggle.yearly::before {
   align-items: start;
 }
 
-.pricing-grid-two {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 820px;
-  margin-inline: auto;
-}
 
 .pricing-card {
   background: var(--color-surface);
@@ -1613,8 +1608,7 @@ html[dir="rtl"] .pricing-badge {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .about-story { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
-  .pricing-grid,
-  .pricing-grid-two { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
   .pricing-card.featured { transform: none; }
   .contact-grid { grid-template-columns: 1fr; }
 }

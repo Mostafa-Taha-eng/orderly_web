@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title_home": "Orderly — Управление заказами и складом для онлайн-продавцов",
+    "title_home": "Orderly — Accounting System for Online Businesses",
     "title_about": "О приложении — Orderly",
     "title_pricing": "Цены — Orderly",
     "title_contact": "Связаться с нами — Orderly",
     "title_privacy": "Политика конфиденциальности — Orderly",
     "title_terms": "Условия использования — Orderly",
-    "desc_home": "Orderly is a mini ERP for social sellers — manage orders, inventory, and accounting with Manager, Admin, Marketer, and Stock & Communications apps.",
-    "desc_about": "Learn about the Orderly project and how it helps online sellers manage orders, inventory, and financial reports in one place.",
-    "desc_pricing": "Orderly pricing: monthly plan for 99 EGP or yearly plan for 999 EGP.",
+    "desc_home": "Orderly is an accounting-first system for social sellers — track costs, revenue, and profits, plus manage orders and inventory with Manager, Admin, Marketer, and Stock & Communications apps.",
+    "desc_about": "Learn about Orderly: an accounting system that helps online businesses track profits and manage orders and inventory in one place.",
+    "desc_pricing": "Orderly pricing: monthly 299 EGP, 3 months 799 EGP, or yearly 2999 EGP.",
     "desc_contact": "Contact Orderly support via form, WhatsApp, or email — we are here to help.",
     "desc_privacy": "Orderly Privacy Policy: how we collect, protect, and use your data transparently.",
-    "desc_terms": "Terms and conditions for using the Orderly app and order/inventory management services.",
-    "keywords_home": "Orderly, order management, inventory, accounting, online sellers",
-    "keywords_about": "Orderly, about, ERP, e-commerce",
+    "desc_terms": "Terms and conditions for using the Orderly app and its accounting, order, and inventory services.",
+    "keywords_home": "Orderly, accounting, profits, order management, inventory, online sellers",
+    "keywords_about": "Orderly, about, accounting system, e-commerce",
     "keywords_pricing": "Orderly, pricing, subscription, plans",
     "keywords_contact": "Orderly, support, contact, help",
     "keywords_privacy": "Orderly, privacy, data protection",
@@ -27,10 +27,10 @@
     "getStarted": "Начать"
   },
   "hero": {
-    "badge": "Мини-ERP для онлайн-продавцов",
-    "title": "Управляйте заказами и складом",
-    "titleHighlight": "Умно и просто",
-    "desc": "Orderly помогает управлять заказами, складом и бухгалтерией из одного места — создан для продавцов на Facebook, Instagram и TikTok.",
+    "badge": "Accounting system for online sellers",
+    "title": "Track accounting & profits",
+    "titleHighlight": "Run your business with ease",
+    "desc": "Orderly is an accounting system that helps you track costs, revenue, and profits — while managing orders and inventory from one place. Built for sellers on Facebook, Instagram, and TikTok.",
     "ctaPrimary": "Скачать приложение",
     "ctaSecondary": "Изучить функции",
     "mockTitle": "Панель управления",
@@ -44,7 +44,7 @@
     "mockProfit": "Прибыль",
     "float1": "Новый заказ!",
     "float2": "Склад обновлён",
-    "mission": "Наша цель — помочь каждому продавцу уверенно управлять заказами и складом: простые инструменты, которые облегчают работу команды и поддерживают рост бизнеса."
+    "mission": "Our mission is to help every seller understand profits and track accounting with confidence — with simple tools for orders and inventory that support your growth."
   },
   "problem": {
     "label": "Проблема",
@@ -60,15 +60,15 @@
   "features": {
     "label": "Функции",
     "title": "Всё необходимое в одном приложении",
-    "desc": "Мощные инструменты, созданные специально для продавцов в соцсетях",
+    "desc": "Accounting and operations tools built for social media sellers",
     "orderTitle": "Управление заказами",
     "orderDesc": "Записывайте заказы со всех платформ, отслеживайте статус от получения до доставки, не пропускайте ни одного заказа.",
     "inventoryTitle": "Управление складом",
     "inventoryDesc": "Автообновление количества при каждом заказе и оповещения при низком остатке.",
-    "accountingTitle": "Бухгалтерия",
-    "accountingDesc": "Точно отслеживайте выручку, расходы и прибыль — знайте своё финансовое положение в любой момент.",
+    "accountingTitle": "Accounting",
+    "accountingDesc": "Track costs, revenue, and profits accurately — know your financial position anytime and make clearer decisions for growth.",
     "reportsTitle": "Отчёты",
-    "reportsDesc": "Ежедневные, еженедельные и ежемесячные отчёты помогают принимать лучшие решения для роста."
+    "reportsDesc": "Daily, weekly, and monthly financial reports that help you understand sales, costs, and profits."
   },
   "roles": {
     "label": "Роли",
@@ -105,7 +105,7 @@
   "testimonials": {
     "label": "Отзывы",
     "title": "Что говорят наши продавцы",
-    "desc": "Тысячи продавцов доверяют Orderly управление своим бизнесом",
+    "desc": "Thousands of sellers trust Orderly to track profits and run their business",
     "t1Text": "Orderly изменил мой подход к заказам в Instagram. Раньше я терял заказы — теперь всё организовано.",
     "t1Name": "Sarah Ahmed",
     "t1Role": "Владелец магазина одежды",
@@ -117,8 +117,8 @@
     "t3Role": "Менеджер магазина косметики"
   },
   "cta": {
-    "title": "Готовы организовать свой бизнес?",
-    "desc": "Присоединяйтесь к тысячам продавцов, которые умно управляют заказами и складом с Orderly.",
+    "title": "Ready to see your profits clearly?",
+    "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "Скачать приложение"
   },
   "download": {
@@ -140,7 +140,7 @@
     "warehouseDesc": "• Коммуникации связываются с клиентом для подтверждения заказа, данных клиента и заказа.\n\n• Склад получает подтверждённые заказы, готовит их и передаёт в службу доставки."
   },
   "footer": {
-    "desc": "Orderly — мини-ERP, помогающий продавцам в соцсетях управлять заказами, складом и бухгалтерией.",
+    "desc": "Orderly — an accounting system that helps social sellers track profits and manage orders and inventory.",
     "product": "Продукт",
     "company": "Компания",
     "support": "Поддержка",
@@ -154,36 +154,40 @@
     "rights": "Все права защищены."
   },
   "aboutProject": {
-    "heroTitle": "О проекте Orderly",
-    "heroDesc": "Интегрированная цифровая система управления для вашего онлайн-бизнеса",
-    "p1": "Orderly — это комплексная цифровая система управления, разработанная для помощи малым и средним предприятиям, зависящим от онлайн-продаж, в эффективном и удобном управлении повседневными операциями. Проект направлен на создание единой платформы, объединяющей все основные операционные процессы в одной системе — включая управление заказами, складом, клиентами, расходами, выручкой, прибылью и аналитическую отчётность — помогая владельцам бизнеса отслеживать коммерческую деятельность и принимать более точные решения на основе реальных данных.",
-    "p2": "Проект возник из наблюдения за трудностями, с которыми сталкиваются многие владельцы интернет-магазинов и молодые бренды. Большинство из них по-прежнему полагаются на бумажные записи, традиционные таблицы или несколько отдельных приложений для управления разными аспектами бизнеса. Это увеличивает вероятность ошибок, затрудняет отслеживание склада и заказов и не даёт чёткого представления о результатах и прибыльности.",
-    "p3": "Orderly предоставляет интегрированную рабочую среду, помогающую пользователям управлять бизнесом из одного места. Через систему можно добавлять и организовывать товары на складе, записывать новые заказы и отслеживать их статус на каждом этапе выполнения, управлять данными клиентов и вести полную историю прошлых сделок, а также автоматически и точно отслеживать расходы, выручку и прибыль.",
-    "p4": "Система построена на централизованной базе данных, обеспечивающей организованное и безопасное хранение всех данных. Она также предоставляет интерактивные панели, отображающие ключевые показатели эффективности в реальном времени — такие как количество заказов, объём продаж, значение прибыли, состояние склада и другая информация, необходимая владельцам бизнеса для постоянного мониторинга операций.",
-    "p5": "Одно из важнейших преимуществ Orderly — он выходит за рамки простой записи данных, помогая пользователям анализировать их и превращать в практические выводы для принятия решений. Платформа предоставляет подробные отчёты о продажах, самых продаваемых товарах, выручке за разные периоды, операционных расходах и чистой прибыли, способствуя повышению эффективности управления и снижению финансовых рисков.",
-    "p6": "Приложение разработано для простоты использования и подходит владельцам молодых предприятий, которые могут не обладать продвинутыми техническими знаниями. Акцент сделан на простых, хорошо организованных интерфейсах, помогающих быстро и легко получать нужную информацию. Система также поддерживает будущее расширение для добавления новых функций, отвечающих потребностям различных видов коммерческой деятельности.",
-    "p7": "Видение проекта — стать интегрированной платформой управления для всех типов предприятий, зависящих от электронной коммерции, и поддержать цифровую трансформацию малого и среднего бизнеса, предоставляя профессиональные инструменты по доступной цене с упрощёнными операционными процедурами.",
-    "p8": "Orderly стремится помочь предпринимателям и владельцам бизнеса более эффективно управлять операциями, сокращать потери из-за административных ошибок и улучшать способность к планированию и принятию решений — в конечном итоге повышая шансы на успех, устойчивость и долгосрочный рост их предприятий."
+    "heroTitle": "About the Orderly Project",
+    "heroDesc": "An integrated digital accounting system that helps your projects manage online business",
+    "p1": "Orderly is an integrated digital accounting system developed to help small and medium-sized businesses that sell online understand their financial performance and manage day-to-day work efficiently. The project aims to provide a unified platform that prioritizes costs, revenue, profits, and financial reporting — while also supporting order management, inventory, and customers in one system — so business owners can make more accurate decisions based on real data.",
+    "p2": "The idea came from observing challenges faced by online store owners and emerging brands. Many still rely on paper records, spreadsheets, or multiple separate apps to follow accounts and operational work. That increases errors, makes true profitability harder to see, and weakens connected tracking of inventory and orders.",
+    "p3": "Orderly provides an integrated environment that starts with accounting: monitoring expenses and revenue and calculating profits automatically and accurately, then extends to managing daily activity from one place. Through the system you can add and organize products in inventory, record new orders and track fulfillment stages, and manage customer data with a complete transaction history.",
+    "p4": "The system uses a centralized database that keeps data organized and secure, with interactive dashboards showing key financial and operational indicators in real time — such as profit value, sales volume, order count, inventory status, and other information business owners need to monitor continuously.",
+    "p5": "A key advantage of Orderly is that it goes beyond recording data — it helps users analyze it into actionable insights. It delivers detailed reports on operating costs, revenue across periods, net profit, sales performance, and best-selling products, improving financial visibility, reducing risk, and supporting day-to-day management.",
+    "p6": "The app is designed to be easy to use for emerging business owners who may not have advanced technical or accounting expertise. Interfaces are simple and organized so users can reach the numbers and information they need quickly. The system also supports future expansion with new features for different commercial activities.",
+    "p7": "The vision is to become an integrated accounting platform that helps e-commerce businesses manage operations with clear financial insight and simplified workflows — supporting digital transformation for SMEs with professional tools at an affordable cost.",
+    "p8": "Orderly aspires to help entrepreneurs track accounting and profits more efficiently, reduce losses from weak financial visibility or follow-up errors, and improve planning and decision-making — while supporting order and inventory management — increasing the chances of long-term success, sustainability, and growth."
   },
   "pricing": {
     "heroTitle": "Тарифные планы",
-    "heroDesc": "Выберите месячный или годовой — понятные цены в египетских фунтах",
+    "heroDesc": "Выберите месяц, 3 месяца или год — понятные цены в египетских фунтах",
     "monthlyName": "Месячный план",
-    "monthlyDesc": "Оплата каждый месяц с полной гибкостью",
+    "monthlyDesc": "Полная гибкость с ежемесячной оплатой",
+    "quarterlyName": "План на 3 месяца",
+    "quarterlyDesc": "Явная экономия на средний срок",
     "yearlyName": "Годовой план",
-    "yearlyDesc": "Больше экономии с годовой подпиской",
-    "yearlyBadge": "Выгоднее",
+    "yearlyDesc": "Лучшая цена при годовой оплате",
+    "yearlyBadge": "Лучшая цена",
     "currency": "EGP",
     "periodMonthly": "/мес.",
+    "periodQuarterly": "/3 мес.",
     "periodYearly": "/год",
-    "f1": "Управление заказами",
-    "f2": "Управление складом",
-    "f3": "Бухгалтерия и отчёты",
+    "f1": "Бухгалтерия и финансовые отчёты",
+    "f2": "Управление заказами",
+    "f3": "Управление складом",
     "f4": "Все роли команды",
     "f5": "Техподдержка",
-    "yearlyExtra": "Экономия по сравнению с месячным",
+    "quarterlyExtra": "Экономия по сравнению с месячным",
+    "yearlyExtra": "Максимальная экономия по сравнению с короткими планами",
     "choosePlan": "Подписаться",
-    "note": "Цены в египетских фунтах. Отмена в любой момент из приложения."
+    "note": "Цены в египетских фунтах. Отмена в любой момент в приложении."
   },
   "contact": {
     "heroTitle": "Связаться с нами",
@@ -292,7 +296,7 @@
   "screenshots": {
     "label": "Скриншоты",
     "title": "Посмотрите приложение изнутри",
-    "desc": "Понятный интерфейс для заказов, склада и финансовых отчётов",
+    "desc": "A clear interface for financial reports, orders, and inventory",
     "prev": "Назад",
     "next": "Далее"
   },

@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title_home": "Orderly — Auftrags- und Lagerverwaltung für Online-Händler",
+    "title_home": "Orderly — Accounting System for Online Businesses",
     "title_about": "Über die App — Orderly",
     "title_pricing": "Preise — Orderly",
     "title_contact": "Kontakt — Orderly",
     "title_privacy": "Datenschutzrichtlinie — Orderly",
     "title_terms": "Allgemeine Geschäftsbedingungen — Orderly",
-    "desc_home": "Orderly is a mini ERP for social sellers — manage orders, inventory, and accounting with Manager, Admin, Marketer, and Stock & Communications apps.",
-    "desc_about": "Learn about the Orderly project and how it helps online sellers manage orders, inventory, and financial reports in one place.",
-    "desc_pricing": "Orderly pricing: monthly plan for 99 EGP or yearly plan for 999 EGP.",
+    "desc_home": "Orderly is an accounting-first system for social sellers — track costs, revenue, and profits, plus manage orders and inventory with Manager, Admin, Marketer, and Stock & Communications apps.",
+    "desc_about": "Learn about Orderly: an accounting system that helps online businesses track profits and manage orders and inventory in one place.",
+    "desc_pricing": "Orderly pricing: monthly 299 EGP, 3 months 799 EGP, or yearly 2999 EGP.",
     "desc_contact": "Contact Orderly support via form, WhatsApp, or email — we are here to help.",
     "desc_privacy": "Orderly Privacy Policy: how we collect, protect, and use your data transparently.",
-    "desc_terms": "Terms and conditions for using the Orderly app and order/inventory management services.",
-    "keywords_home": "Orderly, order management, inventory, accounting, online sellers",
-    "keywords_about": "Orderly, about, ERP, e-commerce",
+    "desc_terms": "Terms and conditions for using the Orderly app and its accounting, order, and inventory services.",
+    "keywords_home": "Orderly, accounting, profits, order management, inventory, online sellers",
+    "keywords_about": "Orderly, about, accounting system, e-commerce",
     "keywords_pricing": "Orderly, pricing, subscription, plans",
     "keywords_contact": "Orderly, support, contact, help",
     "keywords_privacy": "Orderly, privacy, data protection",
@@ -27,10 +27,10 @@
     "getStarted": "Jetzt starten"
   },
   "hero": {
-    "badge": "Mini-ERP für Online-Händler",
-    "title": "Verwalten Sie Aufträge & Lager",
-    "titleHighlight": "Smart & Einfach",
-    "desc": "Orderly hilft Ihnen, Aufträge, Lager und Buchhaltung an einem Ort zu verwalten — entwickelt für Verkäufer auf Facebook, Instagram und TikTok.",
+    "badge": "Accounting system for online sellers",
+    "title": "Track accounting & profits",
+    "titleHighlight": "Run your business with ease",
+    "desc": "Orderly is an accounting system that helps you track costs, revenue, and profits — while managing orders and inventory from one place. Built for sellers on Facebook, Instagram, and TikTok.",
     "ctaPrimary": "App herunterladen",
     "ctaSecondary": "Funktionen entdecken",
     "mockTitle": "Dashboard",
@@ -44,7 +44,7 @@
     "mockProfit": "Gewinn",
     "float1": "Neuer Auftrag!",
     "float2": "Lager aktualisiert",
-    "mission": "Unser Ziel ist es, jedem Händler zu helfen, Bestellungen und Lagerbestände souverän zu verwalten — mit einfachen Tools, die Ihr Team entlasten und Ihr Wachstum unterstützen."
+    "mission": "Our mission is to help every seller understand profits and track accounting with confidence — with simple tools for orders and inventory that support your growth."
   },
   "problem": {
     "label": "Das Problem",
@@ -60,15 +60,15 @@
   "features": {
     "label": "Funktionen",
     "title": "Alles, was Sie brauchen, in einer App",
-    "desc": "Leistungsstarke Tools, speziell für Social-Media-Händler entwickelt",
+    "desc": "Accounting and operations tools built for social media sellers",
     "orderTitle": "Auftragsverwaltung",
     "orderDesc": "Erfassen Sie Aufträge von allen Plattformen, verfolgen Sie den Status vom Eingang bis zur Lieferung, verpassen Sie keinen Auftrag.",
     "inventoryTitle": "Lagerverwaltung",
     "inventoryDesc": "Automatische Mengenaktualisierung bei jedem Auftrag und Benachrichtigungen bei niedrigem Lagerbestand.",
-    "accountingTitle": "Buchhaltung",
-    "accountingDesc": "Verfolgen Sie Umsatz, Kosten und Gewinne präzise — kennen Sie Ihren Finanzstatus jederzeit.",
+    "accountingTitle": "Accounting",
+    "accountingDesc": "Track costs, revenue, and profits accurately — know your financial position anytime and make clearer decisions for growth.",
     "reportsTitle": "Berichte",
-    "reportsDesc": "Tägliche, wöchentliche und monatliche Berichte helfen Ihnen, bessere Entscheidungen für Wachstum zu treffen."
+    "reportsDesc": "Daily, weekly, and monthly financial reports that help you understand sales, costs, and profits."
   },
   "roles": {
     "label": "Rollen",
@@ -105,7 +105,7 @@
   "testimonials": {
     "label": "Kundenstimmen",
     "title": "Was unsere Händler sagen",
-    "desc": "Tausende Händler vertrauen Orderly bei der Führung ihres Geschäfts",
+    "desc": "Thousands of sellers trust Orderly to track profits and run their business",
     "t1Text": "Orderly hat meine Art, Instagram-Aufträge zu verwalten, verändert. Früher habe ich Aufträge verloren — jetzt ist alles organisiert.",
     "t1Name": "Sarah Ahmed",
     "t1Role": "Inhaberin eines Modegeschäfts",
@@ -117,8 +117,8 @@
     "t3Role": "Managerin eines Kosmetikgeschäfts"
   },
   "cta": {
-    "title": "Bereit, Ihr Geschäft zu organisieren?",
-    "desc": "Schließen Sie sich Tausenden Händlern an, die Aufträge und Lager smart mit Orderly verwalten.",
+    "title": "Ready to see your profits clearly?",
+    "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "App herunterladen"
   },
   "download": {
@@ -140,7 +140,7 @@
     "warehouseDesc": "• Die Kommunikation kontaktiert den Kunden zur Bestätigung von Bestellung, Kundendaten und Auftragsdaten.\n\n• Das Lager erhält bestätigte Bestellungen, bereitet sie vor und übergibt sie an das Versandunternehmen."
   },
   "footer": {
-    "desc": "Orderly — Mini-ERP, das Social-Media-Händlern hilft, Aufträge, Lager und Buchhaltung zu verwalten.",
+    "desc": "Orderly — an accounting system that helps social sellers track profits and manage orders and inventory.",
     "product": "Produkt",
     "company": "Unternehmen",
     "support": "Support",
@@ -154,34 +154,38 @@
     "rights": "Alle Rechte vorbehalten."
   },
   "aboutProject": {
-    "heroTitle": "Über das Orderly-Projekt",
-    "heroDesc": "Ein integriertes digitales Managementsystem für Ihr Online-Geschäft",
-    "p1": "Orderly ist ein umfassendes digitales Managementsystem, das entwickelt wurde, um kleinen und mittleren Unternehmen, die auf Online-Verkäufe angewiesen sind, bei der effizienten und einfachen Verwaltung ihres Tagesgeschäfts zu helfen. Das Projekt zielt darauf ab, eine einheitliche Plattform bereitzustellen, die alle wesentlichen Betriebsprozesse in einem System vereint — einschließlich Auftragsverwaltung, Lager, Kunden, Kosten, Umsatz, Gewinne und analytischer Berichte — und Unternehmern hilft, ihre Geschäftstätigkeit zu überwachen und genauere Entscheidungen auf Basis realer Daten zu treffen.",
-    "p2": "Das Projekt entstand aus der Beobachtung der Herausforderungen, denen viele Online-Shop-Besitzer und aufstrebende Marken gegenüberstehen. Viele von ihnen verlassen sich noch auf Papieraufzeichnungen, traditionelle Tabellenkalkulationen oder mehrere separate Apps zur Verwaltung verschiedener Geschäftsbereiche. Dies erhöht die Fehlerwahrscheinlichkeit, erschwert die Nachverfolgung von Lager und Aufträgen und verhindert einen klaren Überblick über Leistung und Rentabilität.",
-    "p3": "Orderly bietet eine integrierte Arbeitsumgebung, die Nutzern hilft, ihr Geschäft von einem Ort aus zu verwalten. Über das System können Sie Produkte hinzufügen und im Lager organisieren, neue Aufträge erfassen und deren Status in jeder Erfüllungsphase verfolgen, Kundendaten verwalten und eine vollständige Historie vergangener Transaktionen führen sowie Ausgaben, Umsatz und Gewinne automatisch und präzise überwachen.",
-    "p4": "Das System basiert auf einer zentralen Datenbank, die sicherstellt, dass alle Daten organisiert und sicher gespeichert werden. Es bietet auch interaktive Dashboards, die wichtige Leistungsindikatoren in Echtzeit anzeigen — wie Auftragsanzahl, Verkaufsvolumen, Gewinnwert, Lagerstatus und andere Informationen, die Unternehmer benötigen, um ihre Betriebe kontinuierlich zu überwachen.",
-    "p5": "Einer der wichtigsten Vorteile von Orderly ist, dass es über die reine Datenerfassung hinausgeht — es hilft Nutzern, diese Daten zu analysieren und in umsetzbare Erkenntnisse für Entscheidungen zu verwandeln. Die Plattform liefert detaillierte Berichte über Verkaufsleistung, meistverkaufte Produkte, Umsatz in verschiedenen Zeiträumen, Betriebskosten und Nettogewinn und trägt so zur Verbesserung der Managementeffizienz und zur Reduzierung finanzieller Risiken bei.",
-    "p6": "Die App ist benutzerfreundlich gestaltet und für aufstrebende Unternehmer geeignet, die möglicherweise keine fortgeschrittenen technischen Kenntnisse haben. Der Fokus lag auf einfachen, gut organisierten Oberflächen, die Nutzern schnellen und einfachen Zugang zu benötigten Informationen ermöglichen. Das System unterstützt auch zukünftige Erweiterungen für neue Funktionen, die den Bedürfnissen verschiedener Geschäftstypen entsprechen.",
-    "p7": "Die Vision des Projekts ist es, eine integrierte Managementplattform für alle Arten von Unternehmen zu werden, die vom E-Commerce abhängen, und die digitale Transformation kleiner und mittlerer Unternehmen zu unterstützen, indem professionelle Tools zu erschwinglichen Kosten mit vereinfachten Betriebsabläufen bereitgestellt werden.",
-    "p8": "Orderly strebt danach, Unternehmern und Geschäftsinhabern zu helfen, ihre Betriebe effizienter zu verwalten, Verluste durch Verwaltungsfehler zu reduzieren und ihre Fähigkeit zur Planung und Entscheidungsfindung zu verbessern — und so die Chancen auf Erfolg, Nachhaltigkeit und langfristiges Wachstum ihrer Unternehmen zu erhöhen."
+    "heroTitle": "About the Orderly Project",
+    "heroDesc": "An integrated digital accounting system that helps your projects manage online business",
+    "p1": "Orderly is an integrated digital accounting system developed to help small and medium-sized businesses that sell online understand their financial performance and manage day-to-day work efficiently. The project aims to provide a unified platform that prioritizes costs, revenue, profits, and financial reporting — while also supporting order management, inventory, and customers in one system — so business owners can make more accurate decisions based on real data.",
+    "p2": "The idea came from observing challenges faced by online store owners and emerging brands. Many still rely on paper records, spreadsheets, or multiple separate apps to follow accounts and operational work. That increases errors, makes true profitability harder to see, and weakens connected tracking of inventory and orders.",
+    "p3": "Orderly provides an integrated environment that starts with accounting: monitoring expenses and revenue and calculating profits automatically and accurately, then extends to managing daily activity from one place. Through the system you can add and organize products in inventory, record new orders and track fulfillment stages, and manage customer data with a complete transaction history.",
+    "p4": "The system uses a centralized database that keeps data organized and secure, with interactive dashboards showing key financial and operational indicators in real time — such as profit value, sales volume, order count, inventory status, and other information business owners need to monitor continuously.",
+    "p5": "A key advantage of Orderly is that it goes beyond recording data — it helps users analyze it into actionable insights. It delivers detailed reports on operating costs, revenue across periods, net profit, sales performance, and best-selling products, improving financial visibility, reducing risk, and supporting day-to-day management.",
+    "p6": "The app is designed to be easy to use for emerging business owners who may not have advanced technical or accounting expertise. Interfaces are simple and organized so users can reach the numbers and information they need quickly. The system also supports future expansion with new features for different commercial activities.",
+    "p7": "The vision is to become an integrated accounting platform that helps e-commerce businesses manage operations with clear financial insight and simplified workflows — supporting digital transformation for SMEs with professional tools at an affordable cost.",
+    "p8": "Orderly aspires to help entrepreneurs track accounting and profits more efficiently, reduce losses from weak financial visibility or follow-up errors, and improve planning and decision-making — while supporting order and inventory management — increasing the chances of long-term success, sustainability, and growth."
   },
   "pricing": {
     "heroTitle": "Preispläne",
-    "heroDesc": "Wählen Sie monatlich oder jährlich — klare Preise in ägyptischen Pfund",
+    "heroDesc": "Wählen Sie monatlich, 3 Monate oder jährlich — klare Preise in ägyptischen Pfund",
     "monthlyName": "Monatsplan",
-    "monthlyDesc": "Monatlich zahlen mit voller Flexibilität",
+    "monthlyDesc": "Volle Flexibilität mit monatlicher Zahlung",
+    "quarterlyName": "3-Monats-Plan",
+    "quarterlyDesc": "Klare Ersparnis für mittlere Laufzeit",
     "yearlyName": "Jahresplan",
-    "yearlyDesc": "Mehr sparen mit dem Jahresabo",
+    "yearlyDesc": "Bester Wert mit jährlicher Zahlung",
     "yearlyBadge": "Bester Wert",
     "currency": "EGP",
     "periodMonthly": "/Monat",
+    "periodQuarterly": "/3 Monate",
     "periodYearly": "/Jahr",
-    "f1": "Auftragsverwaltung",
-    "f2": "Lagerverwaltung",
-    "f3": "Buchhaltung & Berichte",
+    "f1": "Buchhaltung & Finanzberichte",
+    "f2": "Auftragsverwaltung",
+    "f3": "Lagerverwaltung",
     "f4": "Alle Teamrollen",
     "f5": "Technischer Support",
-    "yearlyExtra": "Sparen im Vergleich zur Monatskarte",
+    "quarterlyExtra": "Sparen gegenüber Monatsabo",
+    "yearlyExtra": "Größte Ersparnis gegenüber kürzeren Plänen",
     "choosePlan": "Jetzt abonnieren",
     "note": "Preise in ägyptischen Pfund. Jederzeit in der App kündbar."
   },
@@ -292,7 +296,7 @@
   "screenshots": {
     "label": "Screenshots",
     "title": "Sehen Sie die App von innen",
-    "desc": "Eine klare Oberfläche für Bestellungen, Lager und Finanzberichte",
+    "desc": "A clear interface for financial reports, orders, and inventory",
     "prev": "Zurück",
     "next": "Weiter"
   },

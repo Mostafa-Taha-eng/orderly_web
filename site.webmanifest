@@ -1,7 +1,7 @@
 {
   "name": "Orderly",
   "short_name": "Orderly",
-  "description": "Mini ERP for managing orders, inventory, and accounting for online sellers.",
+  "description": "Accounting system that helps online sellers track profits and manage orders and inventory.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

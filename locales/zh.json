@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title_home": "Orderly — 在线卖家的订单与库存管理",
+    "title_home": "Orderly — Accounting System for Online Businesses",
     "title_about": "关于应用 — Orderly",
     "title_pricing": "定价 — Orderly",
     "title_contact": "联系我们 — Orderly",
     "title_privacy": "隐私政策 — Orderly",
     "title_terms": "条款与条件 — Orderly",
-    "desc_home": "Orderly is a mini ERP for social sellers — manage orders, inventory, and accounting with Manager, Admin, Marketer, and Stock & Communications apps.",
-    "desc_about": "Learn about the Orderly project and how it helps online sellers manage orders, inventory, and financial reports in one place.",
-    "desc_pricing": "Orderly pricing: monthly plan for 99 EGP or yearly plan for 999 EGP.",
+    "desc_home": "Orderly is an accounting-first system for social sellers — track costs, revenue, and profits, plus manage orders and inventory with Manager, Admin, Marketer, and Stock & Communications apps.",
+    "desc_about": "Learn about Orderly: an accounting system that helps online businesses track profits and manage orders and inventory in one place.",
+    "desc_pricing": "Orderly pricing: monthly 299 EGP, 3 months 799 EGP, or yearly 2999 EGP.",
     "desc_contact": "Contact Orderly support via form, WhatsApp, or email — we are here to help.",
     "desc_privacy": "Orderly Privacy Policy: how we collect, protect, and use your data transparently.",
-    "desc_terms": "Terms and conditions for using the Orderly app and order/inventory management services.",
-    "keywords_home": "Orderly, order management, inventory, accounting, online sellers",
-    "keywords_about": "Orderly, about, ERP, e-commerce",
+    "desc_terms": "Terms and conditions for using the Orderly app and its accounting, order, and inventory services.",
+    "keywords_home": "Orderly, accounting, profits, order management, inventory, online sellers",
+    "keywords_about": "Orderly, about, accounting system, e-commerce",
     "keywords_pricing": "Orderly, pricing, subscription, plans",
     "keywords_contact": "Orderly, support, contact, help",
     "keywords_privacy": "Orderly, privacy, data protection",
@@ -27,10 +27,10 @@
     "getStarted": "立即开始"
   },
   "hero": {
-    "badge": "在线卖家迷你 ERP",
-    "title": "管理订单与库存",
-    "titleHighlight": "智能且简单",
-    "desc": "Orderly 帮助您在一个地方管理订单、库存和账务 — 专为 Facebook、Instagram 和 TikTok 上的卖家打造。",
+    "badge": "Accounting system for online sellers",
+    "title": "Track accounting & profits",
+    "titleHighlight": "Run your business with ease",
+    "desc": "Orderly is an accounting system that helps you track costs, revenue, and profits — while managing orders and inventory from one place. Built for sellers on Facebook, Instagram, and TikTok.",
     "ctaPrimary": "下载应用",
     "ctaSecondary": "探索功能",
     "mockTitle": "仪表盘",
@@ -44,7 +44,7 @@
     "mockProfit": "利润",
     "float1": "新订单！",
     "float2": "库存已更新",
-    "mission": "我们的目标是帮助每一位卖家自信地管理订单与库存——用简单的工具减轻团队负担，支持业务稳步增长。"
+    "mission": "Our mission is to help every seller understand profits and track accounting with confidence — with simple tools for orders and inventory that support your growth."
   },
   "problem": {
     "label": "问题",
@@ -60,15 +60,15 @@
   "features": {
     "label": "功能",
     "title": "一个应用满足所有需求",
-    "desc": "专为社交媒体卖家设计的强大工具",
+    "desc": "Accounting and operations tools built for social media sellers",
     "orderTitle": "订单管理",
     "orderDesc": "记录来自所有平台的订单，从接收到交付全程跟踪状态，不错过任何订单。",
     "inventoryTitle": "库存管理",
     "inventoryDesc": "每笔订单自动更新数量，库存不足时收到提醒。",
-    "accountingTitle": "账务",
-    "accountingDesc": "准确跟踪收入、成本和利润 — 随时了解您的财务状况。",
+    "accountingTitle": "Accounting",
+    "accountingDesc": "Track costs, revenue, and profits accurately — know your financial position anytime and make clearer decisions for growth.",
     "reportsTitle": "报表",
-    "reportsDesc": "日报、周报和月报帮助您做出更好的增长决策。"
+    "reportsDesc": "Daily, weekly, and monthly financial reports that help you understand sales, costs, and profits."
   },
   "roles": {
     "label": "角色",
@@ -105,7 +105,7 @@
   "testimonials": {
     "label": "客户评价",
     "title": "卖家怎么说",
-    "desc": "数千名卖家信任 Orderly 来运营他们的业务",
+    "desc": "Thousands of sellers trust Orderly to track profits and run their business",
     "t1Text": "Orderly 改变了我管理 Instagram 订单的方式。以前会丢单 — 现在一切都井井有条。",
     "t1Name": "Sarah Ahmed",
     "t1Role": "时装店店主",
@@ -117,8 +117,8 @@
     "t3Role": "化妆品店经理"
   },
   "cta": {
-    "title": "准备好整理您的业务了吗？",
-    "desc": "加入数千名使用 Orderly 智能管理订单和库存的卖家。",
+    "title": "Ready to see your profits clearly?",
+    "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "下载应用"
   },
   "download": {
@@ -140,7 +140,7 @@
     "warehouseDesc": "• 沟通人员联系客户确认订单、客户资料与订单信息。\n\n• 库存人员接收已确认订单，进行备货并交给物流公司。"
   },
   "footer": {
-    "desc": "Orderly — 帮助社交媒体卖家管理订单、库存和账务的迷你 ERP。",
+    "desc": "Orderly — an accounting system that helps social sellers track profits and manage orders and inventory.",
     "product": "产品",
     "company": "公司",
     "support": "支持",
@@ -154,34 +154,38 @@
     "rights": "保留所有权利。"
   },
   "aboutProject": {
-    "heroTitle": "关于 Orderly 项目",
-    "heroDesc": "用于运营在线业务的集成数字化管理系统",
-    "p1": "Orderly 是一个全面的数字化管理系统，旨在帮助依赖在线销售的中小型企业高效、便捷地管理日常运营。该项目旨在提供一个统一平台，将所有核心运营流程整合到一个系统中 — 包括订单管理、库存、客户、成本、收入、利润和分析报告 — 帮助企业主监控商业活动并基于真实数据做出更准确的决策。",
-    "p2": "该项目源于对许多在线商店店主和新兴品牌所面临挑战的观察。其中大量商家仍依赖纸质记录、传统电子表格或多个独立应用来管理业务的不同方面。这增加了出错的可能性，使库存和订单难以跟踪，也无法清晰了解业绩和盈利能力。",
-    "p3": "Orderly 提供集成的工作环境，帮助用户在一个地方管理业务。通过系统，您可以添加和组织库存中的产品，记录新订单并在每个履行阶段跟踪状态，管理客户数据并保留完整的历史交易记录，以及自动、准确地监控支出、收入和利润。",
-    "p4": "系统基于集中式数据库，确保所有数据以有序、安全的方式存储。它还提供交互式仪表盘，实时显示关键绩效指标 — 如订单数量、销售额、利润值、库存状态以及企业主持续监控运营所需的其他信息。",
-    "p5": "Orderly 最重要的优势之一是它不仅仅记录数据 — 还帮助用户分析数据并将其转化为可操作的决策洞察。平台提供关于销售表现、畅销产品、不同时期收入、运营成本和净利润的详细报告，有助于提高管理效率并降低财务风险。",
-    "p6": "该应用设计简洁易用，适合可能没有高级技术经验的新兴企业主。重点在于提供简单、组织良好的界面，帮助用户快速、轻松地获取所需信息。系统还支持未来扩展，以添加满足不同类型商业活动需求的新功能。",
-    "p7": "项目愿景是成为服务于所有依赖电子商务的企业类型的集成管理平台，并通过以可承受的成本提供专业工具和简化的操作流程，支持中小企业的数字化转型。",
-    "p8": "Orderly 致力于帮助企业家和企业主更高效地管理运营，减少因管理错误造成的损失，并提高规划和决策能力 — 最终增加业务成功、可持续性和长期增长的机会。"
+    "heroTitle": "About the Orderly Project",
+    "heroDesc": "An integrated digital accounting system that helps your projects manage online business",
+    "p1": "Orderly is an integrated digital accounting system developed to help small and medium-sized businesses that sell online understand their financial performance and manage day-to-day work efficiently. The project aims to provide a unified platform that prioritizes costs, revenue, profits, and financial reporting — while also supporting order management, inventory, and customers in one system — so business owners can make more accurate decisions based on real data.",
+    "p2": "The idea came from observing challenges faced by online store owners and emerging brands. Many still rely on paper records, spreadsheets, or multiple separate apps to follow accounts and operational work. That increases errors, makes true profitability harder to see, and weakens connected tracking of inventory and orders.",
+    "p3": "Orderly provides an integrated environment that starts with accounting: monitoring expenses and revenue and calculating profits automatically and accurately, then extends to managing daily activity from one place. Through the system you can add and organize products in inventory, record new orders and track fulfillment stages, and manage customer data with a complete transaction history.",
+    "p4": "The system uses a centralized database that keeps data organized and secure, with interactive dashboards showing key financial and operational indicators in real time — such as profit value, sales volume, order count, inventory status, and other information business owners need to monitor continuously.",
+    "p5": "A key advantage of Orderly is that it goes beyond recording data — it helps users analyze it into actionable insights. It delivers detailed reports on operating costs, revenue across periods, net profit, sales performance, and best-selling products, improving financial visibility, reducing risk, and supporting day-to-day management.",
+    "p6": "The app is designed to be easy to use for emerging business owners who may not have advanced technical or accounting expertise. Interfaces are simple and organized so users can reach the numbers and information they need quickly. The system also supports future expansion with new features for different commercial activities.",
+    "p7": "The vision is to become an integrated accounting platform that helps e-commerce businesses manage operations with clear financial insight and simplified workflows — supporting digital transformation for SMEs with professional tools at an affordable cost.",
+    "p8": "Orderly aspires to help entrepreneurs track accounting and profits more efficiently, reduce losses from weak financial visibility or follow-up errors, and improve planning and decision-making — while supporting order and inventory management — increasing the chances of long-term success, sustainability, and growth."
   },
   "pricing": {
     "heroTitle": "价格方案",
-    "heroDesc": "选择月付或年付 — 以埃及镑清晰标价",
+    "heroDesc": "选择月付、3个月或年付——以埃及镑清晰计价",
     "monthlyName": "月付方案",
-    "monthlyDesc": "按月付费，灵活方便",
+    "monthlyDesc": "按月付费，灵活自如",
+    "quarterlyName": "3个月方案",
+    "quarterlyDesc": "中期订阅更省",
     "yearlyName": "年付方案",
-    "yearlyDesc": "年付更优惠",
-    "yearlyBadge": "更超值",
+    "yearlyDesc": "年付性价比最高",
+    "yearlyBadge": "超值推荐",
     "currency": "EGP",
     "periodMonthly": "/月",
+    "periodQuarterly": "/3个月",
     "periodYearly": "/年",
-    "f1": "订单管理",
-    "f2": "库存管理",
-    "f3": "会计与报表",
+    "f1": "会计与财务报表",
+    "f2": "订单管理",
+    "f3": "库存管理",
     "f4": "全部团队角色",
     "f5": "技术支持",
-    "yearlyExtra": "比月付更省",
+    "quarterlyExtra": "相比月付更省",
+    "yearlyExtra": "相比更短方案节省最多",
     "choosePlan": "立即订阅",
     "note": "价格以埃及镑计价。可随时在应用内取消。"
   },
@@ -292,7 +296,7 @@
   "screenshots": {
     "label": "应用截图",
     "title": "走进应用内部",
-    "desc": "清晰界面，轻松管理订单、库存与财务报告",
+    "desc": "A clear interface for financial reports, orders, and inventory",
     "prev": "上一张",
     "next": "下一张"
   },

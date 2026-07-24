@@ -4,7 +4,7 @@
  */
 window.ORDERLY_SITE = Object.freeze({
   name: 'Orderly',
-  tagline: 'Mini ERP for online sellers',
+  tagline: 'Accounting system for online sellers',
   /** Production site origin without trailing slash. Leave empty to auto-detect. */
   url: '',
   /** Fallback used in sitemap.xml / static meta when origin unknown */
