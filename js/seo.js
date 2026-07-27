@@ -287,7 +287,7 @@ const OrderlySEO = (() => {
           thumbnailUrl: m.image,
           uploadDate: '2026-01-01',
           contentUrl: videoUrl,
-          embedUrl: 'https://www.youtube-nocookie.com/embed/mE7AclWKlfw',
+          embedUrl: 'https://www.youtube-nocookie.com/embed/mNavoLlEUxM',
           publisher: { '@id': orgId }
         });
       }
