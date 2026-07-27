@@ -1974,12 +1974,23 @@ html[dir="rtl"] .pricing-badge {
 
 /* ========== Section CTA ========== */
 .section-cta {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin-top: 2.5rem;
+  text-align: center;
+}
+
+.section-cta .btn {
+  margin-inline: auto;
 }
 
 /* ========== Comparison Table ========== */
 .comparison-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border-radius: var(--radius-lg);
@@ -1990,6 +2001,8 @@ html[dir="rtl"] .pricing-badge {
 
 .comparison-table {
   width: 100%;
+  min-width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   font-size: 0.9375rem;
 }
@@ -2000,6 +2013,7 @@ html[dir="rtl"] .pricing-badge {
   text-align: start;
   border-bottom: 1px solid color-mix(in srgb, var(--color-on-surface) 10%, transparent);
   vertical-align: top;
+  word-break: break-word;
 }
 
 .comparison-table thead th {
@@ -2420,6 +2434,10 @@ html[dir="rtl"] .pricing-badge {
   .shot-lightbox { gap: 0.5rem; padding: 3.5rem 0.5rem 1.5rem; }
   .shot-lightbox-arrow { width: 40px; height: 40px; font-size: 1.4rem; }
   .shot-lightbox-stage { max-width: 88vw; }
+  .comparison-table {
+    table-layout: auto;
+    min-width: 560px;
+  }
   .comparison-table th,
   .comparison-table td { padding: 0.75rem 0.625rem; font-size: 0.8125rem; }
   .section-cta .btn-lg { width: 100%; max-width: 320px; }
