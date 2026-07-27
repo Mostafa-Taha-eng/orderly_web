@@ -138,6 +138,7 @@ const OrderlySEO = (() => {
 
   function applyOpenGraph(m) {
     const locale = LOCALE_MAP[m.lang] || 'ar_EG';
+    const cfg = site();
     upsertMeta('property', 'og:title', m.title);
     upsertMeta('property', 'og:description', m.description);
     upsertMeta('property', 'og:image', m.image);
@@ -145,7 +146,9 @@ const OrderlySEO = (() => {
     upsertMeta('property', 'og:type', m.key === 'home' ? 'website' : 'article');
     upsertMeta('property', 'og:site_name', site().name || 'Orderly');
     upsertMeta('property', 'og:locale', locale);
-    upsertMeta('property', 'og:image:alt', site().name || 'Orderly');
+    upsertMeta('property', 'og:image:alt', `${site().name || 'Orderly'} — ${m.title}`);
+    if (cfg.ogImageWidth) upsertMeta('property', 'og:image:width', String(cfg.ogImageWidth));
+    if (cfg.ogImageHeight) upsertMeta('property', 'og:image:height', String(cfg.ogImageHeight));
   }
 
   function applyTwitter(m) {
@@ -153,6 +156,7 @@ const OrderlySEO = (() => {
     upsertMeta('name', 'twitter:title', m.title);
     upsertMeta('name', 'twitter:description', m.description);
     upsertMeta('name', 'twitter:image', m.image);
+    upsertMeta('name', 'twitter:image:alt', `${site().name || 'Orderly'} — ${m.title}`);
     if (site().twitterHandle) {
       upsertMeta('name', 'twitter:site', site().twitterHandle);
     }

@@ -121,6 +121,48 @@
     "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "ऐप डाउनलोड करें"
   },
+  "demo": {
+    "label": "डेमो",
+    "title": "Orderly को काम करते देखें",
+    "desc": "ऐप में त्वरित टूर — ऑर्डर दर्ज करने से वित्तीय रिपोर्ट तक"
+  },
+  "comparison": {
+    "label": "त्वरित तुलना",
+    "title": "Orderly बनाम पारंपरिक तरीका",
+    "desc": "WhatsApp + Excel + कागज — बनाम एक सिस्टम जो सब कुछ संभालता है",
+    "colAspect": "क्षेत्र",
+    "colTraditional": "पारंपरिक (WhatsApp + Excel + कागज)",
+    "colOrderly": "Orderly",
+    "row1Aspect": "ऑर्डर ट्रैकिंग",
+    "row1Traditional": "WhatsApp, Facebook और Instagram पर बिखरे संदेश",
+    "row1Orderly": "सभी ऑर्डर और स्थिति के लिए एक डैशबोर्ड",
+    "row2Aspect": "इन्वेंटरी",
+    "row2Traditional": "Excel या कागज पर मैन्युअल अपडेट",
+    "row2Orderly": "हर ऑर्डर के साथ ऑटो-सिंक और कम स्टॉक अलर्ट",
+    "row3Aspect": "लाभ जानना",
+    "row3Traditional": "जटिल, त्रुटि-प्रवण गणना",
+    "row3Orderly": "तत्काल, सटीक वित्तीय रिपोर्ट",
+    "row4Aspect": "टीम वर्कफ़्लो",
+    "row4Traditional": "Overlapping tasks और जानकारी का नुकसान",
+    "row4Orderly": "स्पष्ट अनुमतियों के साथ प्रति रोल ऐप",
+    "row5Aspect": "इनवॉइस",
+    "row5Traditional": "कागज प्रिंटिंग या मैन्युअल बनाना",
+    "row5Orderly": "स्वतः जनरेट इनवॉइस — PDF या Excel",
+    "row6Aspect": "रिपोर्ट",
+    "row6Traditional": "Excel स्प्रेडशीट में घंटे",
+    "row6Orderly": "आय विवरण और रिपोर्ट का तत्काल निर्यात"
+  },
+  "sectionCta": {
+    "demo": "अभी ऐप डाउनलोड करें",
+    "problem": "अव्यवस्था छोड़ें — Orderly से शुरू करें",
+    "comparison": "आसान तरीका चुनें",
+    "features": "सुविधाएँ मुफ्त में आज़माएँ",
+    "howItWorks": "मिनटों में शुरू करें",
+    "download": "मूल्य योजनाएँ देखें",
+    "screenshots": "ऐप खुद आज़माएँ",
+    "faq": "जवाब नहीं मिला? संपर्क करें",
+    "testimonials": "हजारों विक्रेताओं में शामिल हों"
+  },
   "download": {
     "label": "ऐप डाउनलोड करें",
     "title": "अपने लिए सही संस्करण प्राप्त करें",

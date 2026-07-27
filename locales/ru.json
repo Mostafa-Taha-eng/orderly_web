@@ -121,6 +121,48 @@
     "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "Скачать приложение"
   },
+  "demo": {
+    "label": "Демо",
+    "title": "Orderly в действии",
+    "desc": "Быстрый тур в приложении — от заказов до финансовых отчётов"
+  },
+  "comparison": {
+    "label": "Быстрое сравнение",
+    "title": "Orderly vs традиционный способ",
+    "desc": "WhatsApp + Excel + бумага — против одной системы для всего",
+    "colAspect": "Область",
+    "colTraditional": "Традиционно (WhatsApp + Excel + Бумага)",
+    "colOrderly": "Orderly",
+    "row1Aspect": "Отслеживание заказов",
+    "row1Traditional": "Разрозненные сообщения в WhatsApp, Facebook и Instagram",
+    "row1Orderly": "Одна панель для всех заказов и статусов",
+    "row2Aspect": "Склад",
+    "row2Traditional": "Ручные обновления в Excel или на бумаге",
+    "row2Orderly": "Авто-синхронизация с каждым заказом и оповещения о низком остатке",
+    "row3Aspect": "Знать прибыль",
+    "row3Traditional": "Сложные расчёты с ошибками",
+    "row3Orderly": "Мгновенные точные финансовые отчёты",
+    "row4Aspect": "Работа команды",
+    "row4Traditional": "Пересекающиеся задачи и потеря информации",
+    "row4Orderly": "Отдельное приложение для каждой роли с чёткими правами",
+    "row5Aspect": "Счета",
+    "row5Traditional": "Печать на бумаге или ручное создание",
+    "row5Orderly": "Авто-счета — PDF или Excel",
+    "row6Aspect": "Отчёты",
+    "row6Traditional": "Часы в таблицах Excel",
+    "row6Orderly": "Мгновенный экспорт отчётов о прибылях и убытках"
+  },
+  "sectionCta": {
+    "demo": "Скачать приложение сейчас",
+    "problem": "Оставьте хаос — начните с Orderly",
+    "comparison": "Выберите более простой путь",
+    "features": "Попробуйте функции бесплатно",
+    "howItWorks": "Начните за минуты",
+    "download": "Посмотреть тарифы",
+    "screenshots": "Попробуйте приложение",
+    "faq": "Не нашли ответ? Свяжитесь с нами",
+    "testimonials": "Присоединитесь к тысячам продавцов"
+  },
   "download": {
     "label": "Скачать приложение",
     "title": "Получите подходящую версию",

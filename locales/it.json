@@ -121,6 +121,48 @@
     "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "Scarica l'app"
   },
+  "demo": {
+    "label": "Demo",
+    "title": "Guarda Orderly in azione",
+    "desc": "Un tour rapido nell'app — dall'inserimento ordini ai report finanziari"
+  },
+  "comparison": {
+    "label": "Confronto rapido",
+    "title": "Orderly vs metodo tradizionale",
+    "desc": "WhatsApp + Excel + carta — contro un sistema che gestisce tutto",
+    "colAspect": "Area",
+    "colTraditional": "Tradizionale (WhatsApp + Excel + Carta)",
+    "colOrderly": "Orderly",
+    "row1Aspect": "Tracciamento ordini",
+    "row1Traditional": "Messaggi sparsi su WhatsApp, Facebook e Instagram",
+    "row1Orderly": "Una dashboard per tutti gli ordini e stati",
+    "row2Aspect": "Magazzino",
+    "row2Traditional": "Aggiornamenti manuali in Excel o su carta",
+    "row2Orderly": "Sincronizzazione auto con ogni ordine e avvisi scorte basse",
+    "row3Aspect": "Conoscere i profitti",
+    "row3Traditional": "Calcoli complessi e soggetti a errori",
+    "row3Orderly": "Report finanziari istantanei e accurati",
+    "row4Aspect": "Flusso di team",
+    "row4Traditional": "Attività sovrapposte e informazioni perse",
+    "row4Orderly": "App dedicata per ruolo con permessi chiari",
+    "row5Aspect": "Fatture",
+    "row5Traditional": "Stampa carta o creazione manuale",
+    "row5Orderly": "Fatture auto — PDF o Excel",
+    "row6Aspect": "Report",
+    "row6Traditional": "Ore in fogli Excel",
+    "row6Orderly": "Export istantaneo di conti economici e report"
+  },
+  "sectionCta": {
+    "demo": "Scarica l'app ora",
+    "problem": "Lascia il caos — inizia con Orderly",
+    "comparison": "Scegli il modo più semplice",
+    "features": "Prova le funzioni gratis",
+    "howItWorks": "Inizia in pochi minuti",
+    "download": "Vedi i piani tariffari",
+    "screenshots": "Prova l'app da solo",
+    "faq": "Non hai trovato la risposta? Contattaci",
+    "testimonials": "Unisciti a migliaia di venditori"
+  },
   "download": {
     "label": "Scarica l'app",
     "title": "Ottieni la versione giusta per te",

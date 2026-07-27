@@ -1,3 +1,4 @@
+# Orderly Landing Page — robots.txt
 User-agent: *
 Allow: /
 

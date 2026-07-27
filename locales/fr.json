@@ -121,6 +121,48 @@
     "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "Télécharger l'application"
   },
+  "demo": {
+    "label": "Démo",
+    "title": "Voir Orderly en action",
+    "desc": "Une visite rapide dans l'application — de la saisie des commandes aux rapports financiers"
+  },
+  "comparison": {
+    "label": "Comparaison rapide",
+    "title": "Orderly vs. la méthode traditionnelle",
+    "desc": "WhatsApp + Excel + papier — contre un seul système qui gère tout",
+    "colAspect": "Domaine",
+    "colTraditional": "Traditionnel (WhatsApp + Excel + Papier)",
+    "colOrderly": "Orderly",
+    "row1Aspect": "Suivi des commandes",
+    "row1Traditional": "Messages dispersés sur WhatsApp, Facebook et Instagram",
+    "row1Orderly": "Un tableau de bord pour toutes les commandes et statuts",
+    "row2Aspect": "Stock",
+    "row2Traditional": "Mises à jour manuelles dans Excel ou sur papier",
+    "row2Orderly": "Synchronisation auto avec chaque commande et alertes de stock bas",
+    "row3Aspect": "Connaître vos profits",
+    "row3Traditional": "Calculs complexes et sujets aux erreurs",
+    "row3Orderly": "Rapports financiers instantanés et précis",
+    "row4Aspect": "Travail d'équipe",
+    "row4Traditional": "Tâches qui se chevauchent et informations perdues",
+    "row4Orderly": "Application dédiée par rôle avec permissions claires",
+    "row5Aspect": "Factures",
+    "row5Traditional": "Impression papier ou création manuelle",
+    "row5Orderly": "Factures auto — PDF ou Excel",
+    "row6Aspect": "Rapports",
+    "row6Traditional": "Des heures dans des tableurs Excel",
+    "row6Orderly": "Export instantané des comptes de résultat et rapports"
+  },
+  "sectionCta": {
+    "demo": "Télécharger l'application maintenant",
+    "problem": "Quittez le chaos — commencez avec Orderly",
+    "comparison": "Choisissez la méthode plus simple",
+    "features": "Essayez les fonctionnalités gratuitement",
+    "howItWorks": "Commencez en quelques minutes",
+    "download": "Voir les plans tarifaires",
+    "screenshots": "Essayez l'application vous-même",
+    "faq": "Pas trouvé votre réponse ? Contactez-nous",
+    "testimonials": "Rejoignez des milliers de vendeurs"
+  },
   "download": {
     "label": "Télécharger l'application",
     "title": "Obtenez la version qui vous convient",

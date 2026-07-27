@@ -121,6 +121,48 @@
     "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "App herunterladen"
   },
+  "demo": {
+    "label": "Demo",
+    "title": "Orderly in Aktion sehen",
+    "desc": "Eine kurze Tour in der App — von der Auftragserfassung bis zu Finanzberichten"
+  },
+  "comparison": {
+    "label": "Schneller Vergleich",
+    "title": "Orderly vs. der traditionelle Weg",
+    "desc": "WhatsApp + Excel + Papier — versus ein System, das alles verwaltet",
+    "colAspect": "Bereich",
+    "colTraditional": "Traditionell (WhatsApp + Excel + Papier)",
+    "colOrderly": "Orderly",
+    "row1Aspect": "Auftragsverfolgung",
+    "row1Traditional": "Verstreute Nachrichten auf WhatsApp, Facebook & Instagram",
+    "row1Orderly": "Ein Dashboard für alle Aufträge und Status",
+    "row2Aspect": "Lagerbestand",
+    "row2Traditional": "Manuelle Updates in Excel oder auf Papier",
+    "row2Orderly": "Auto-Sync mit jedem Auftrag plus Niedrigbestand-Warnungen",
+    "row3Aspect": "Gewinne kennen",
+    "row3Traditional": "Komplexe, fehleranfällige Berechnungen",
+    "row3Orderly": "Sofortige, genaue Finanzberichte",
+    "row4Aspect": "Team-Workflow",
+    "row4Traditional": "Überlappende Aufgaben und verlorene Informationen",
+    "row4Orderly": "Eigene App pro Rolle mit klaren Berechtigungen",
+    "row5Aspect": "Rechnungen",
+    "row5Traditional": "Papierdruck oder manuelle Erstellung",
+    "row5Orderly": "Automatische Rechnungen — PDF oder Excel",
+    "row6Aspect": "Berichte",
+    "row6Traditional": "Stunden in Excel-Tabellen",
+    "row6Orderly": "Sofortiger Export von GuV und Berichten"
+  },
+  "sectionCta": {
+    "demo": "App jetzt herunterladen",
+    "problem": "Chaos verlassen — mit Orderly starten",
+    "comparison": "Den einfacheren Weg wählen",
+    "features": "Funktionen kostenlos testen",
+    "howItWorks": "In Minuten starten",
+    "download": "Preispläne ansehen",
+    "screenshots": "App selbst ausprobieren",
+    "faq": "Keine Antwort gefunden? Kontaktieren Sie uns",
+    "testimonials": "Tausenden Verkäufern beitreten"
+  },
   "download": {
     "label": "App herunterladen",
     "title": "Holen Sie sich die passende Version",

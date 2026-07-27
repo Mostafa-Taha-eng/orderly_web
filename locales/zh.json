@@ -121,6 +121,48 @@
     "desc": "Join thousands of sellers who track accounting, orders, and inventory smarter with Orderly.",
     "button": "下载应用"
   },
+  "demo": {
+    "label": "演示",
+    "title": "观看 Orderly 实际操作",
+    "desc": "应用内快速浏览 — 从录入订单到财务报表"
+  },
+  "comparison": {
+    "label": "快速对比",
+    "title": "Orderly 对比传统方式",
+    "desc": "WhatsApp + Excel + 纸质 — 对比一套管理系统",
+    "colAspect": "方面",
+    "colTraditional": "传统方式（WhatsApp + Excel + 纸质）",
+    "colOrderly": "Orderly",
+    "row1Aspect": "订单跟踪",
+    "row1Traditional": "WhatsApp、Facebook 和 Instagram 上零散消息",
+    "row1Orderly": "一个面板管理所有订单和状态",
+    "row2Aspect": "库存",
+    "row2Traditional": "在 Excel 或纸上手动更新",
+    "row2Orderly": "每笔订单自动同步并低库存提醒",
+    "row3Aspect": "了解利润",
+    "row3Traditional": "复杂且易出错的计算",
+    "row3Orderly": "即时准确的财务报告",
+    "row4Aspect": "团队协作",
+    "row4Traditional": "任务重叠和信息丢失",
+    "row4Orderly": "每个角色独立应用与清晰权限",
+    "row5Aspect": "发票",
+    "row5Traditional": "纸质打印或手动创建",
+    "row5Orderly": "自动生成发票 — PDF 或 Excel",
+    "row6Aspect": "报告",
+    "row6Traditional": "在 Excel 表格中花费数小时",
+    "row6Orderly": "即时导出损益表和报告"
+  },
+  "sectionCta": {
+    "demo": "立即下载应用",
+    "problem": "告别混乱 — 从 Orderly 开始",
+    "comparison": "选择更简单的方式",
+    "features": "免费试用功能",
+    "howItWorks": "几分钟即可开始",
+    "download": "查看价格方案",
+    "screenshots": "亲自试用应用",
+    "faq": "没找到答案？联系我们",
+    "testimonials": "加入数千卖家"
+  },
   "download": {
     "label": "下载应用",
     "title": "获取适合您的版本",

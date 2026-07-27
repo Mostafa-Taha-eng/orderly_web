@@ -73,6 +73,7 @@ function initScrollEffects() {
     '.social-contact-card',
     '.faq-item',
     '.shots-carousel',
+    '.comparison-table-wrap',
     '.section-header'
   ];
 

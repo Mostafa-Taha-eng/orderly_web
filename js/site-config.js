@@ -11,7 +11,9 @@ window.ORDERLY_SITE = Object.freeze({
   defaultUrl: 'https://mostafa-taha-eng.github.io/orderly_web',
   author: 'Orderly',
   twitterHandle: '',
-  ogImagePath: 'assets/logos/manager_logo.png',
+  ogImagePath: 'assets/screen_shots/home_screen.jpg',
+  ogImageWidth: 1080,
+  ogImageHeight: 1920,
   localeDefault: 'ar_EG',
   /** Placeholders — replace with real IDs when ready */
   analytics: {

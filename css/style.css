@@ -1972,6 +1972,65 @@ html[dir="rtl"] .pricing-badge {
   margin-bottom: 2rem;
 }
 
+/* ========== Section CTA ========== */
+.section-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* ========== Comparison Table ========== */
+.comparison-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-lg);
+  border: 1px solid color-mix(in srgb, var(--color-on-surface) 12%, transparent);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem 1.25rem;
+  text-align: start;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-on-surface) 10%, transparent);
+  vertical-align: top;
+}
+
+.comparison-table thead th {
+  background: color-mix(in srgb, var(--color-primary) 8%, var(--color-surface));
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.comparison-table thead th:last-child {
+  background: color-mix(in srgb, var(--color-success) 12%, var(--color-surface));
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-bad {
+  color: var(--color-error);
+}
+
+.comparison-good {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.comparison-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--color-on-background);
+  min-width: 120px;
+}
+
 /* ========== Screenshots Carousel ========== */
 .screenshots {
   overflow: hidden;
@@ -2361,4 +2420,7 @@ html[dir="rtl"] .pricing-badge {
   .shot-lightbox { gap: 0.5rem; padding: 3.5rem 0.5rem 1.5rem; }
   .shot-lightbox-arrow { width: 40px; height: 40px; font-size: 1.4rem; }
   .shot-lightbox-stage { max-width: 88vw; }
+  .comparison-table th,
+  .comparison-table td { padding: 0.75rem 0.625rem; font-size: 0.8125rem; }
+  .section-cta .btn-lg { width: 100%; max-width: 320px; }
 }
