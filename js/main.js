@@ -74,6 +74,7 @@ function initScrollEffects() {
     '.faq-item',
     '.shots-carousel',
     '.comparison-table-wrap',
+    '.video-embed',
     '.section-header'
   ];
 

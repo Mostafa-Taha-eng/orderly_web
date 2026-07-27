@@ -276,6 +276,21 @@ const OrderlySEO = (() => {
           mainEntity: faqItems
         });
       }
+
+      const videoUrl = site().demoVideoUrl;
+      if (videoUrl) {
+        upsertJsonLd('ld-video', {
+          '@context': 'https://schema.org',
+          '@type': 'VideoObject',
+          name: t('demo.title'),
+          description: t('demo.desc'),
+          thumbnailUrl: m.image,
+          uploadDate: '2026-01-01',
+          contentUrl: videoUrl,
+          embedUrl: 'https://www.youtube-nocookie.com/embed/mE7AclWKlfw',
+          publisher: { '@id': orgId }
+        });
+      }
     }
   }
 

@@ -14,6 +14,7 @@ window.ORDERLY_SITE = Object.freeze({
   ogImagePath: 'assets/screen_shots/home_screen.jpg',
   ogImageWidth: 1080,
   ogImageHeight: 1920,
+  demoVideoUrl: 'https://youtu.be/mE7AclWKlfw',
   localeDefault: 'ar_EG',
   /** Placeholders — replace with real IDs when ready */
   analytics: {

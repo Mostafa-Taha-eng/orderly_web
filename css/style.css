@@ -1986,6 +1986,30 @@ html[dir="rtl"] .pricing-badge {
   margin-inline: auto;
 }
 
+/* ========== Demo Video ========== */
+.demo-video {
+  padding-top: 3rem;
+}
+
+.video-embed {
+  position: relative;
+  width: min(100%, 900px);
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--color-black);
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* ========== Comparison Table ========== */
 .comparison-table-wrap {
   width: 100%;
