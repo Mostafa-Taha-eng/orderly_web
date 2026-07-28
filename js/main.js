@@ -64,7 +64,6 @@ function initScrollEffects() {
   const selectors = [
     '.feature-card',
     '.problem-card',
-    '.testimonial-card',
     '.step-item',
     '.pricing-card',
     '.value-card',

@@ -7,7 +7,7 @@ const OrderlyI18n = (() => {
   const LOCALE_VERSION = '8';
 
   const LANGUAGES = [
-    { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+    { code: 'ar', name: 'العربية', flag: '🇪🇬' },
     { code: 'en', name: 'English', flag: '🇬🇧' },
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
